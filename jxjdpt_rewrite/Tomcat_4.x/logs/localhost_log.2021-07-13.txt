@@ -1,0 +1,172 @@
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploying class repositories to work directory E:\tomcat\Tomcat_4.x\work\Standalone\localhost\struts1
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy class files /WEB-INF/classes to D:\mtr\job2\struts2\root\WEB-INF\classes
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/FCKeditor-2.3.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\FCKeditor-2.3.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/activation.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\activation.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/axis-ant.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\axis-ant.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/axis.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\axis.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/backport-util-concurrent-3.1.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\backport-util-concurrent-3.1.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/barcode.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\barcode.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/bcprov-jdk14-128.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\bcprov-jdk14-128.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/bix.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\bix.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/bksx-commons-ext-v1.00.00.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\bksx-commons-ext-v1.00.00.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/bksx-fileupload.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\bksx-fileupload.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/bksx_cas_interface_v1.00.00.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\bksx_cas_interface_v1.00.00.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/bksx_commons.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\bksx_commons.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/bksx_display.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\bksx_display.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/bksx_rbac_api.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\bksx_rbac_api.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-beanutils-1.7.0.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-beanutils-1.7.0.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-beanutils.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-beanutils.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-codec-1.4.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-codec-1.4.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-collections-3.2.1.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-collections-3.2.1.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-digester.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-digester.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-discovery-0.2.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-discovery-0.2.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-discovery.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-discovery.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-fileupload-1.0.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-fileupload-1.0.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-fileupload-1.2.2.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-fileupload-1.2.2.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-httpclient-3.1.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-httpclient-3.1.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-io-1.3.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-io-1.3.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-lang-2.3.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-lang-2.3.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-logging.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-logging.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/dba.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\dba.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/dbcp.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\dbcp.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/diy09SMS1.0.jar-jdk1.4.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\diy09SMS1.0.jar-jdk1.4.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/ess_japi.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\ess_japi.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/ezmorph-1.0.6.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\ezmorph-1.0.6.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/iText-2.1.4.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\iText-2.1.4.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/iText-rtf-2.1.4.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\iText-rtf-2.1.4.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/iText-rups-2.1.4.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\iText-rups-2.1.4.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/iTextAsian.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\iTextAsian.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/itext_099.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\itext_099.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/jai_codec.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\jai_codec.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/jai_core.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\jai_core.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/jaws.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\jaws.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/jaxrpc.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\jaxrpc.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/jcommon-1.0.12.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\jcommon-1.0.12.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/jdom.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\jdom.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/jfreechart-1.0.8.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\jfreechart-1.0.8.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/json-lib-2.2.3-jdk13.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\json-lib-2.2.3-jdk13.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/jstl.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\jstl.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/jxl.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\jxl.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/log4j-1.2.8.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\log4j-1.2.8.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/logx.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\logx.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/msbase.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\msbase.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/mssqlserver.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\mssqlserver.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/msutil.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\msutil.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/ojdbc14.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\ojdbc14.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/pageTag.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\pageTag.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/poi2.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\poi2.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/report3_5_5.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\report3_5_5.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/retrotranslator-runtime-1.2.9.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\retrotranslator-runtime-1.2.9.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/saaj.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\saaj.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/slf4j-api-1.6.1.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\slf4j-api-1.6.1.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/soap.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\soap.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/struts.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\struts.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/wsdl4j-1.5.1.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\wsdl4j-1.5.1.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/xerces.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\xerces.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/xml-apis.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\xml-apis.jar
+2021-07-13 13:54:47 WebappLoader[/struts1]: Reloading checks are enabled for this Context
+2021-07-13 13:54:48 StandardManager[/struts1]: Seeding random number generator class java.security.SecureRandom
+2021-07-13 13:54:48 StandardManager[/struts1]: Seeding of random number generator has been completed
+2021-07-13 13:54:48 StandardWrapper[/struts1:default]: Loading container servlet default
+2021-07-13 13:54:48 StandardWrapper[/struts1:invoker]: Loading container servlet invoker
+2021-07-13 13:54:53 HostConfig[localhost]: Deploying configuration descriptor admin.xml
+2021-07-13 13:54:55 HostConfig[localhost]: Deploying configuration descriptor manager.xml
+2021-07-13 13:54:55 WebappLoader[/manager]: Deploying class repositories to work directory E:\tomcat\Tomcat_4.x\work\Standalone\localhost\manager
+2021-07-13 13:54:55 ContextConfig[/manager]: Configured an authenticator for method BASIC
+2021-07-13 13:54:55 StandardManager[/manager]: Seeding random number generator class java.security.SecureRandom
+2021-07-13 13:54:55 StandardManager[/manager]: Seeding of random number generator has been completed
+2021-07-13 13:54:55 StandardWrapper[/manager:default]: Loading container servlet default
+2021-07-13 13:54:55 StandardWrapper[/manager:invoker]: Loading container servlet invoker
+2021-07-13 13:54:55 HostConfig[localhost]: Deploying web application directory ROOT
+2021-07-13 13:54:55 StandardHost[localhost]: Installing web application at context path  from URL file:E:\tomcat\Tomcat_4.x\webapps\ROOT
+2021-07-13 13:54:55 WebappLoader[]: Deploying class repositories to work directory E:\tomcat\Tomcat_4.x\work\Standalone\localhost\_
+2021-07-13 13:54:55 StandardManager[]: Seeding random number generator class java.security.SecureRandom
+2021-07-13 13:54:55 StandardManager[]: Seeding of random number generator has been completed
+2021-07-13 13:54:55 StandardWrapper[:default]: Loading container servlet default
+2021-07-13 13:54:55 StandardWrapper[:invoker]: Loading container servlet invoker
+2021-07-13 13:57:24 WebappLoader[/struts1]: Deploying class repositories to work directory E:\tomcat\Tomcat_4.x\work\Standalone\localhost\struts1
+2021-07-13 13:57:24 WebappLoader[/struts1]: Deploy class files /WEB-INF/classes to D:\mtr\job2\struts2\root\WEB-INF\classes
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/FCKeditor-2.3.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\FCKeditor-2.3.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/activation.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\activation.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/axis-ant.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\axis-ant.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/axis.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\axis.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/backport-util-concurrent-3.1.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\backport-util-concurrent-3.1.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/barcode.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\barcode.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/bcprov-jdk14-128.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\bcprov-jdk14-128.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/bix.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\bix.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/bksx-commons-ext-v1.00.00.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\bksx-commons-ext-v1.00.00.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/bksx-fileupload.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\bksx-fileupload.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/bksx_cas_interface_v1.00.00.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\bksx_cas_interface_v1.00.00.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/bksx_commons.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\bksx_commons.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/bksx_display.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\bksx_display.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/bksx_rbac_api.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\bksx_rbac_api.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-beanutils-1.7.0.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-beanutils-1.7.0.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-beanutils.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-beanutils.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-codec-1.4.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-codec-1.4.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-collections-3.2.1.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-collections-3.2.1.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-digester.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-digester.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-discovery-0.2.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-discovery-0.2.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-discovery.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-discovery.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-fileupload-1.0.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-fileupload-1.0.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-fileupload-1.2.2.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-fileupload-1.2.2.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-httpclient-3.1.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-httpclient-3.1.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-io-1.3.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-io-1.3.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-lang-2.3.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-lang-2.3.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/commons-logging.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\commons-logging.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/dba.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\dba.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/dbcp.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\dbcp.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/diy09SMS1.0.jar-jdk1.4.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\diy09SMS1.0.jar-jdk1.4.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/ess_japi.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\ess_japi.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/ezmorph-1.0.6.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\ezmorph-1.0.6.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/iText-2.1.4.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\iText-2.1.4.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/iText-rtf-2.1.4.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\iText-rtf-2.1.4.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/iText-rups-2.1.4.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\iText-rups-2.1.4.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/iTextAsian.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\iTextAsian.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/itext_099.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\itext_099.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/jai_codec.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\jai_codec.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/jai_core.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\jai_core.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/jaws.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\jaws.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/jaxrpc.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\jaxrpc.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/jcommon-1.0.12.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\jcommon-1.0.12.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/jdom.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\jdom.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/jfreechart-1.0.8.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\jfreechart-1.0.8.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/json-lib-2.2.3-jdk13.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\json-lib-2.2.3-jdk13.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/jstl.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\jstl.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/jxl.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\jxl.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/log4j-1.2.8.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\log4j-1.2.8.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/logx.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\logx.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/msbase.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\msbase.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/mssqlserver.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\mssqlserver.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/msutil.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\msutil.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/ojdbc14.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\ojdbc14.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/pageTag.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\pageTag.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/poi2.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\poi2.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/report3_5_5.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\report3_5_5.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/retrotranslator-runtime-1.2.9.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\retrotranslator-runtime-1.2.9.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/saaj.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\saaj.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/slf4j-api-1.6.1.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\slf4j-api-1.6.1.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/soap.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\soap.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/struts.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\struts.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/wsdl4j-1.5.1.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\wsdl4j-1.5.1.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/xerces.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\xerces.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Deploy JAR /WEB-INF/lib/xml-apis.jar to D:\mtr\job2\struts2\root\WEB-INF\lib\xml-apis.jar
+2021-07-13 13:57:25 WebappLoader[/struts1]: Reloading checks are enabled for this Context
+2021-07-13 13:57:26 StandardManager[/struts1]: Seeding random number generator class java.security.SecureRandom
+2021-07-13 13:57:26 StandardManager[/struts1]: Seeding of random number generator has been completed
+2021-07-13 13:57:26 StandardWrapper[/struts1:default]: Loading container servlet default
+2021-07-13 13:57:26 StandardWrapper[/struts1:invoker]: Loading container servlet invoker
+2021-07-13 13:57:30 HostConfig[localhost]: Deploying configuration descriptor admin.xml
+2021-07-13 13:57:32 HostConfig[localhost]: Deploying configuration descriptor manager.xml
+2021-07-13 13:57:32 WebappLoader[/manager]: Deploying class repositories to work directory E:\tomcat\Tomcat_4.x\work\Standalone\localhost\manager
+2021-07-13 13:57:32 ContextConfig[/manager]: Configured an authenticator for method BASIC
+2021-07-13 13:57:32 StandardManager[/manager]: Seeding random number generator class java.security.SecureRandom
+2021-07-13 13:57:32 StandardManager[/manager]: Seeding of random number generator has been completed
+2021-07-13 13:57:32 StandardWrapper[/manager:default]: Loading container servlet default
+2021-07-13 13:57:32 StandardWrapper[/manager:invoker]: Loading container servlet invoker
+2021-07-13 13:57:32 HostConfig[localhost]: Deploying web application directory ROOT
+2021-07-13 13:57:32 StandardHost[localhost]: Installing web application at context path  from URL file:E:\tomcat\Tomcat_4.x\webapps\ROOT
+2021-07-13 13:57:32 WebappLoader[]: Deploying class repositories to work directory E:\tomcat\Tomcat_4.x\work\Standalone\localhost\_
+2021-07-13 13:57:32 StandardManager[]: Seeding random number generator class java.security.SecureRandom
+2021-07-13 13:57:32 StandardManager[]: Seeding of random number generator has been completed
+2021-07-13 13:57:32 StandardWrapper[:default]: Loading container servlet default
+2021-07-13 13:57:32 StandardWrapper[:invoker]: Loading container servlet invoker

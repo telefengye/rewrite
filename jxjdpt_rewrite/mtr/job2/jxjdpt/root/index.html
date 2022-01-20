@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="js/bjrscard.js"></script>
+        <script type="text/javascript">
+          //清空页面
+          function clearResult()
+          {
+              var objStatus = document.getElementById("status");
+              objStatus.innerHTML = "";
+              var objMsg = document.getElementById("msg");
+              objMsg.innerHTML ="";
+              var objData = document.getElementById("data");
+              objData.value = "";
+          }
+          //显示结果
+          function showResult(msg)
+          {
+              var result = JSON.parse(msg);
+              var objStatus = document.getElementById("status");
+              objStatus.innerHTML = result.status;
+              var objMsg = document.getElementById("msg");
+              objMsg.innerHTML = result.msg;
+              var objData = document.getElementById("data");
+              objData.value = result.data;
+              return result;
+          }
+
+            window.onload = function() {
+                var ocxParent = document.body;
+                var reader = new BJRSReader();
+                reader.onerror = function(error) {
+                    alert("low error:" + error);
+                };
+                
+                reader.init(ocxParent, function(card){
+                    alert("初始化完成!");
+                    window.card = card;
+                    document.getElementById("BJRS_ReadCardBas").onclick = function(){
+                            clearResult();
+                            var pSysId = document.getElementById("pSysId").value;
+                            var iType = parseInt(document.getElementById("iType").value);
+                            window.card.BJRS_ReadCardBas(pSysId, iType, function(s){
+                                var result = showResult(s);
+                                if( 0 == result.status)
+                                {
+                                    var arr = result.data.split("|");
+                                    var cardInfo = arr[3] + "|" + arr[2] + "|";
+                                    document.getElementById("pCardInfo").innerHTML = cardInfo;
+                                }
+                            });
+                        }
+
+                        document.getElementById("BJRS_ReadCard").onclick = function(){
+                            clearResult();
+                            var pSysId = document.getElementById("pSysId").value;
+                            var iType =  parseInt(document.getElementById("iType").value);
+                            var iAuthType = parseInt(document.getElementById("iAuthType").value);
+                            var pCardInfo = document.getElementById("pCardInfo").innerHTML;
+                            var pFileAddr = document.getElementById("pFileAddr").value;
+                            window.card.BJRS_ReadCard(pSysId, iType, iAuthType, pCardInfo, pFileAddr, function(s){showResult(s);});
+                        }
+
+                        document.getElementById("BJRS_WriteCard").onclick = function(){
+                            clearResult();
+                            var pSysId = document.getElementById("pSysId").value;
+                            var iType =  parseInt(document.getElementById("iType").value);
+                            var pCardInfo = document.getElementById("pCardInfo").innerHTML;
+                            var pFileAddr = document.getElementById("pFileAddr").value;
+                            var pWriteData = document.getElementById("pWriteData").value;
+                            window.card.BJRS_WriteCard(pSysId, iType, pCardInfo, pFileAddr, pWriteData, function(s){showResult(s);});
+                        } 
+
+                        document.getElementById("BJRS_VerifyPIN").onclick = function(){
+                            clearResult();
+                            var pSysId = document.getElementById("pSysId").value;
+                            var iType =  parseInt(document.getElementById("iType").value);
+                            window.card.BJRS_VerifyPIN(pSysId, iType, function(s){showResult(s);});
+                        }
+
+                        document.getElementById("BJRS_ChangePIN").onclick = function(){
+                            clearResult();
+                            var pSysId = document.getElementById("pSysId").value;
+                            var iType =  parseInt(document.getElementById("iType").value);
+                            window.card.BJRS_ChangePIN(pSysId, iType, function(s){showResult(s);});
+                        } 
+
+                        document.getElementById("JRS_ReloadPIN").onclick = function(){
+                            clearResult();
+                            var pSysId = document.getElementById("pSysId").value;
+                            var iType =  parseInt(document.getElementById("iType").value);
+                            var pCardInfo = document.getElementById("pCardInfo").innerHTML;
+                            window.card.BJRS_ReloadPIN(pSysId, iType, pCardInfo, function(s){showResult(s);});
+                        } 
+
+                        document.getElementById("BJRS_UnblockPIN").onclick = function(){
+                            clearResult();
+                            var pSysId = document.getElementById("pSysId").value;
+                            var iType =  parseInt(document.getElementById("iType").value);
+                            var pCardInfo = document.getElementById("pCardInfo").innerHTML;
+                            window.card.BJRS_UnblockPIN(pSysId, iType, pCardInfo, function(s){showResult(s);});
+                        } 
+
+                        document.getElementById("BJRS_SignData").onclick = function(){
+                            clearResult();
+                            var pSysId = document.getElementById("pSysId").value;
+                            var iType =  parseInt(document.getElementById("iType").value);
+                            var pCardInfo = document.getElementById("pCardInfo").innerHTML;
+                            var pSrcData = document.getElementById("pSrcData").value;
+                            window.card.BJRS_SignData(pSysId, iType, pCardInfo, pSrcData, function(s){showResult(s);});
+                        } 
+
+                        document.getElementById("BJRS_ReadSCode").onclick = function(){
+                            clearResult();
+                            var pSysId = document.getElementById("pSysId").value;
+                            var iTimeout = 20; 
+                            window.card.BJRS_ReadSCode(pSysId, iTimeout, function(s){showResult(s);});
+                        }
+                        document.getElementById("BJRS_ReadCertInfo").onclick = function(){
+                            clearResult();
+                            var pSysId = document.getElementById("pSysId").value;
+                            window.card.BJRS_ReadCertInfo(pSysId, function(s){showResult(s);});
+                        }
+                        document.getElementById("BJRS_GetReaderUID").onclick = function(){
+                            clearResult();
+                            //window.card.BJRS_GetReaderUID(function(s){showResult(s);});
+                            window.card.iGetReaderInfo(function(s){showResult(s);});
+                        }
+                });
+            }
+            //END SETUP
+        </script>
+    </head>
+    <body>
+        <h4>状态码:<span id="status"></span></h4>
+        <h4>信息:<span id="msg"></span></h4>
+        <h4><span>数据:</span> <textarea id="data" rows="4" cols="80"> </textarea> </h4>
+        <h4>卡片信息:<span id="pCardInfo"></span></h4>
+        <h4>鉴权数据:<span id="pMessage"></span></h4>
+        <h4>文件地址: <input type="text" id="pFileAddr" maxlength="200" value="DF01EF06|28|$"/></h4>
+        <h4>写入数据:<input type="text" id = "pWriteData" maxlength="200" max="1000" value="DF01EF06|18888888888|$" /></h4>
+        <h4>签名原始数据:<input type="text" id = "pSrcData" maxlength="400" value="1234567812345678" /> </h4>
+        <h4>操作卡类型:
+            <select id="iType">
+                <option value="1">1-接触式操作卡</option>
+                <option value="2">2-非接触式操作卡</option>
+                <option value="3">3-自动寻卡，接触式操作卡优先</option>
+                <option value="4" selected="true">4-自动寻卡，非接触式操作卡优先</option>
+            </select>
+        </h4>
+        <h4>读卡认证类型:
+            <select id="iAuthType">
+                <option value="1">1-PIN校验</option>
+                <option value="2" selected="true">2-RK密钥认证</option>
+            </select>
+        </h4>
+        <h4>系统编号:<input type="text" id="pSysId" maxlength="200" value="9527" /> </h4>
+        <h4></h4>
+        <input type="button" id="BJRS_ReadCardBas" value="读卡基本信息" onclick="javascript:click();" />
+        <input type="button" id="BJRS_ReadCard" value="通用读卡" onclick="javascript:click();" />
+        <input type="button" id="BJRS_WriteCard" value="通用写卡" onclick="javascript:click();" />
+        <input type="button" id="BJRS_VerifyPIN" value="验证PIN码" onclick="javascript:click();" />
+        <input type="button" id="BJRS_ChangePIN" value="修改PIN码" onclick="javascript:click();" />
+        <input type="button" id="JRS_ReloadPIN" value="重置PIN码" onclick="javascript:click();" />
+        <input type="button" id="BJRS_UnblockPIN" value="解锁PIN码" onclick="javascript:click();" />
+        <input type="button" id="BJRS_SignData" value="SM2签名" onclick="javascript:click();" />
+        <input type="button" id="BJRS_ReadSCode" value="读电子社保卡" onclick="javascript:click();" />
+        <input type="button" id="BJRS_ReadCertInfo" value="读身份证" onclick="javascript:click();"/>
+        <input type="button" id="BJRS_GetReaderUID" value="终端识别码" onclick="javascript:click();"/>
+    </body>
+</html>

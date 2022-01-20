@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sx-config>
+	<!-- 文件上传的配置信息 -->
+	<upload-config  type="com.sx.conf.UploadConfig">
+		<!-- 文件上传的最大限制(k) -->
+		<file-maxsize>102400</file-maxsize>
+		<!-- 读取到内存中最大限制(k) -->
+		<load-maxsize>4096</load-maxsize>
+		<!-- 文件如果超出内存读取的最大限制，要产生临时文件，临时文件的存放目录 -->
+		<temp-path>sysfiles</temp-path>
+		<!-- 文件上传到服务器端目录 -->
+		<file-path>sysfiles</file-path>
+	</upload-config>
+	<!-- rbac的配置信息 -->
+	<!-- <rbac-config type="com.sx.conf.RbacConfig">
+		<rbacurl>http://130.10.7.101:9090/rbac</rbacurl>
+	</rbac-config> -->
+	<!-- dba的配置信息 -->
+	<dba-config type="com.sx.conf.DbaConfig">
+		<dbs>bjldlsc</dbs>
+		<cfgfile>bjldlsc.xml</cfgfile>
+		<driver>oracle.jdbc.driver.OracleDriver</driver>
+	</dba-config>
+	<!--log的配置信息-->
+	<log-config type="com.sx.conf.LogConfig">
+		<logxcfg>logxcfg.xml</logxcfg>
+		<app>app</app>
+		<debug>true</debug>
+	</log-config>
+	<!-- app的配置信息 -->
+	<app-config type="com.sx.conf.AppConfig">
+		<appcontext>/struts1</appcontext>
+		<pagecountbyh>12</pagecountbyh>
+		<pagecountbyv>25</pagecountbyv>
+	</app-config>
+</sx-config>

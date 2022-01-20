@@ -1,0 +1,22 @@
+#Wed Dec 01 18:11:31 CST 2021
+content_assist_proposals_foreground=0,0,0
+spelling_locale_initialized=true
+markOccurrences=false
+org.eclipse.jdt.ui.text.templates_migrated=true
+useAnnotationsPrefPage=true
+eclipse.preferences.version=1
+org.eclipse.jface.textfont=1|Consolas|15.75|0|WINDOWS|1|-21|0|0|0|400|0|0|0|0|3|2|1|49|Consolas;
+tabWidthPropagated=true
+org.eclipse.jdt.ui.editor.tab.width=
+fontPropagated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+content_assist_autoactivation_triggers_java=.qwertyuiopasdfghjklzxcvbnm
+proposalOrderMigrated=true
+content_assist_proposals_background=255,255,255
+org.eclipse.jdt.ui.formatterprofiles.version=12
+content_assist_number_of_computers=17
+useQuickDiffPrefPage=true
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="com.sx.support.dba.DBDEFPAR"><rhs name\="com.sx.support.dba.dbModuleDescription"/></lhs><lhs name\="com.sx.support.dba.dbModuleDescription"><rhs name\="com.sx.support.dba.dbModuleDescription"/></lhs><lhs name\="java.lang.CharSequence"><rhs name\="java.lang.StringBuffer"/><rhs name\="java.lang.String"/></lhs><lhs name\="com.sx.bean.AbsFormBean"><rhs name\="com.sx.user.form.UserFormBean"/><rhs name\="com.sx.login.form.SocketFormBean"/><rhs name\="com.sx.ldlsc.jxjdpt.formbean.jxbtsh.JxbtsqFB"/><rhs name\="com.sx.ldlsc.zypx.formbean.ggfwlgwpx.PxjhFB"/></lhs><lhs name\="org.apache.struts.action.ActionForm"><rhs name\="com.sx.user.form.UserFormBean"/><rhs name\="com.sx.login.form.SocketFormBean"/><rhs name\="com.sx.ldlsc.jxjdpt.formbean.jxbtsh.JxbtsqFB"/><rhs name\="com.sx.ldlsc.zypx.formbean.ggfwlgwpx.PxjhFB"/></lhs><lhs name\="com.sx.user.form.UserFormBean"><rhs name\="com.sx.user.form.UserFormBean"/></lhs><lhs name\="java.text.DateFormat"><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="java.text.Format"><rhs name\="java.text.SimpleDateFormat"/><rhs name\="java.text.DecimalFormat"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.text.SimpleDateFormat"/><rhs name\="java.text.DecimalFormat"/></lhs><lhs name\="java.text.SimpleDateFormat"><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="com.sx.login.form.SocketFormBean"><rhs name\="com.sx.login.form.SocketFormBean"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="com.sx.ldlsc.jxjdpt.common.AjaxJsonResult"><rhs name\="com.sx.ldlsc.jxjdpt.common.AjaxJsonResult"/></lhs><lhs name\="com.sx.ldlsc.jxjdpt.valuebean.Jxjdgl.JxjdglVB"><rhs name\="com.sx.ldlsc.jxjdpt.valuebean.Jxjdgl.JxjdglVB"/></lhs><lhs name\="java.util.Map"><rhs name\="org.apache.commons.collections.map.HashedMap"/></lhs><lhs name\="java.text.NumberFormat"><rhs name\="java.text.DecimalFormat"/></lhs><lhs name\="java.text.DecimalFormat"><rhs name\="java.text.DecimalFormat"/></lhs><lhs name\="com.sx.ldlsc.jxjdpt.formbean.jxbtsh.JxbtsqFB"><rhs name\="com.sx.ldlsc.jxjdpt.formbean.jxbtsh.JxbtsqFB"/></lhs><lhs name\="com.sx.bean.AbsValueBean"><rhs name\="com.sx.ldlsc.jxjdpt.valuebean.jxbtsh.JxbtsqVB"/><rhs name\="com.sx.ldlsc.zypx.valuebean.ggfwlgwpx.PxjhVB"/></lhs><lhs name\="com.sx.ldlsc.jxjdpt.valuebean.jxbtsh.JxbtsqVB"><rhs name\="com.sx.ldlsc.jxjdpt.valuebean.jxbtsh.JxbtsqVB"/></lhs><lhs name\="com.sx.ldlsc.zypx.valuebean.ggfwlgwpx.PxjhVB"><rhs name\="com.sx.ldlsc.zypx.valuebean.ggfwlgwpx.PxjhVB"/></lhs><lhs name\="com.sx.ldlsc.zypx.ywcl.ggfwlgwpx.PxzhcxYwl"><rhs name\="com.sx.ldlsc.zypx.ywcl.ggfwlgwpx.PxzhcxYwl"/></lhs><lhs name\="com.sx.ldlsc.zypx.formbean.ggfwlgwpx.PxjhFB"><rhs name\="com.sx.ldlsc.zypx.formbean.ggfwlgwpx.PxjhFB"/></lhs></history>
+org.eclipse.jdt.ui.text.code_templates_migrated=true

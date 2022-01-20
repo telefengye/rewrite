@@ -1,0 +1,662 @@
+/*
+#################################################################################################
+#  名    称：应用开发中心CSS范例
+#  版本：1.1
+#  版本日期：2006-7-20
+#  作    者：罗浩
+#  版权所有:北京北控三兴信息技术有限公司
+#  说    明:本文件由美工人员进行修改，本文件适用范围遵照《美工组开发规范》。
+			修改时根据实际风格要求，修改现有样式；不允许弃用一个现有样式的同时新增同类功能的样式；
+			添加新样式时，类名以功能的全称或简称命名。
+#################################################################################################
+*/
+
+
+/*全局链接样式*/
+a:link {font-size:9pt; color:#6b6b6b; text-decoration:none;}
+a:visited {font-size:9pt; color:#6b6b6b; text-decoration:none;}
+a:active {font-size:9pt; color:#ff3c00; text-decoration:none;}
+a:hover {font-size:9pt; color:#ff3c00; text-decoration:none;}
+
+
+/*自定义链接样式*/
+.link1 a:link {font-size:9pt; color:#cccccc; text-decoration:none;}
+.link1 a:visited {font-size:9pt; color:#cccccc; text-decoration:none;}
+.link1 a:active {font-size:9pt; color:#ff3c00; text-decoration:none;}
+.link1 a:hover {font-size:9pt; color:#ff3c00; text-decoration:none;}
+
+
+/*批量添加的自定义链接样式*/
+.tblink a:link {font-size:9pt; color:#000000; text-decoration:none;}
+.tblink a:visited {font-size:9pt; color:#000000; text-decoration:none;}
+.tblink a:active {font-size:9pt; color:#FF9900; text-decoration:underline;}
+.tblink a:hover {font-size:9pt; color:#FF9900; text-decoration:underline;}
+
+
+/*悬浮有背景色/背景图片变化的链接样式*/
+.overlink:link {
+	font-size:9pt; color:#000000; text-decoration:none;width:100%;
+	background-image:none; background-repeat:repeat; background-color:#EEFFEF;
+}
+.overlink:visited {
+	font-size:9pt; color:#000000; text-decoration:none;width:100%;
+	background-image:none; background-repeat:repeat; background-color:#EEFFEF;
+}
+.overlink:active {
+	font-size:9pt; color:#015EB5; text-decoration:none;width:100%;
+	background-image:url(linkbg.gif); background-repeat:repeat; background-color:#FFFAE6; 
+}
+.overlink:hover {
+	font-size:9pt; color:#015EB5; text-decoration:none;width:100%;
+	background-image:url(linkbg.gif); background-repeat:repeat; background-color:#FFFAE6; 
+}
+
+
+/*全局热区样式*/
+area {
+	lhedit:expression(onfocus=this.blur);
+}
+
+
+/*单元格或表格鼠标悬浮效果*/
+.overtd {
+	font-size:9pt; 
+	text-decoration:none; 
+	cursor:hand;
+	behavior:url(my.htc);
+}
+
+
+/*鼠标悬浮手形*/
+.hand {cursor:hand;}
+
+
+/*------------------------------------------------------------------------------------------*/
+
+
+/*全局页面样式*/
+body {
+    margin:0 0 0 0;
+	font-size:9pt;
+	font-family:"宋体",arial; 
+	/*下面七行是滚动条的样式，IE5无效*/
+	scrollbar-arrow-color:#000000;
+	scrollbar-track-color:#EEEEEE;
+	scrollbar-highlight-color:#D4D0C8;
+	scrollbar-face-color:#D4D0C8;
+	scrollbar-shadow-color:#D4D0C8;
+	scrollbar-3dlight-color:#FFFFFF;
+	scrollbar-darkshadow-color:#808080;
+	overflow:auto;/*此处根据系统类型修改*/
+	background-color:#FFFFFF;
+
+}
+
+/*自定义白背景页面样式*/
+.nbgbody {
+	/*下面是与全局不同的背景色和背景图*/
+	background-color:#FFFFFF;
+	/*下行表示无背景图效果*/
+	background-image:none;
+}
+
+
+/*自定义特殊背景*/
+.mybg {
+	background-color:#FFFFFF;
+	background-image:url(images/bg.jpg);
+	/*下行背景图重复方式可以是repeat-x、repeat-y、no-repeat*/
+	background-repeat:repeat-x;
+	/*下行背景图对齐方式可以是top、center、bottom、left、center、right*/
+	background-position:bottom;
+}
+
+
+/*限制背景图为不重复*/
+.noreapt {background-repeat:no-repeat;}
+
+
+/*限制背景图不随页面内容滚动*/
+.bgfixed {background-attachment:fixed;}
+
+
+/*------------------------------------------------------------------------------------------*/
+
+
+/*全局表格样式*/
+table,tr,td {
+	font-size:9pt;
+	font-family:"宋体",arial; 
+	word-break:break-all;
+	word-wrap:break-word;
+	border-collapse:collapse;
+} 
+
+
+/*无边框有背景色表格样式*/
+.table0 {
+	color:#005292;
+	padding:1 2 1 2;
+}
+.table0 tr {height:25px;} 
+.table0 td {background-color:#F0FBFF;} 
+/*横表头*/
+.tablehead0 {
+	font:bold 9pt "宋体",arial;
+	color:#005292;
+	background-color:#DCF2FA !important;
+}
+/*纵表头*/
+.tablelist0{
+	font:normal 9pt "宋体",arial;
+	color:#005292;
+	background-color:#EBF7FB !important;
+}
+
+
+
+/*最常用的表格样式*/
+.table {
+	color:#000000;
+	border:1px solid #9ddaf4;
+	background-color:#ffffff;
+	padding:1 2 1 2;
+}
+.table tr {height:25px;} 
+.table td {border:1px solid #9ddaf4;} 
+/*横表头*/
+.tablehead {
+	font:bold 9pt "宋体",arial;
+	color:#005292;
+	background-color:#c7efff;
+	/*可以用下面的方法自定义特殊的表头高度*/
+	/*height:30px !important;*/
+}
+/*纵表头*/
+.tablelist{
+	font:normal 9pt "宋体",arial;
+	color:#005292;
+	background-color:#ddf5ff;
+}
+
+
+
+
+/*零边距*/
+.pd0{padding:0 !important;}
+
+
+/*.主表内的无边框布局用表格*/
+.none,.none td {	
+	border:none !important;
+	padding:0 !important;
+} 
+
+
+/*自定义表格样式2*/
+.table2 {
+	color:#000000;
+	border:1px solid #2CA070;
+	background-color:#F5FCFB;
+	padding:1 2 1 2;
+}
+.table2 tr {height:25px;}
+.table2 td {border:1px solid #2CA070;}
+/*横表头*/
+.tablehead2 {
+	font:bold 9pt "宋体",arial;
+	color:#008484;
+	background-color:#D3FAFA;
+}
+/*纵表头*/
+.tablelist2{
+	font:normal 9pt "宋体",arial;
+	color:#008484;
+	background-color:#D9F4EE;
+}
+
+
+/*表格行交替色*/
+.tbline tr {background-color:expression((this.sectionRowIndex%2==0)?"#F1FBF6":"#FFFFFF");}
+
+
+/*表格列交替色*/
+.tbvline td {background-color:expression((this.cellIndex%2==0)?"#FFFFFF":"#F1FBF6");}
+
+
+/*明暗线表格样式*/
+.mtable {
+	color:#000000;
+	border-top:1px solid #FF6600;
+	border-left:1px solid #FF6600;
+	border-right:1px solid #FFFFFF;
+	border-bottom:1px solid #FFFFFF;
+	background-color:#FFCC66;
+	border-collapse:separate;
+	padding:1 2 1 2;
+}
+.mtable tr, {
+	height:25px;
+}
+.mtable td {
+	border-top:1px solid #FFFFFF;
+	border-left:1px solid #FFFFFF;
+	border-right:1px solid #FF6600;
+	border-bottom:1px solid #FF6600;
+}
+/*横表头*/
+.mtablehead {
+	font:bold 9pt "宋体",arial;
+	color:#FFFFFF;
+	background-color:#FF9900;
+}
+/**明纵表头*/
+.mtablelist{
+	font:normal 9pt "宋体",arial;
+	color:#FFFFFF;
+	background-color:#FEBD5C;
+}
+
+
+/*隐藏表格线，一般用于复杂报表，打印页还必须调用print.css文件，以下四个样式分别用于去掉单元格上下左右的边框*/
+.notopline,.notopline td{border-top:0 !important;}
+.nobottomline,.nobottomline td {border-bottom:0 !important;}
+.noleftline {border-left:0 !important;}
+.norightline {border-right:0 !important;}
+/*隐藏表格外边框(单元格边框仍然可见)*/
+.noborder {border:0 !important;}
+
+
+/*表格带阴影*/
+.tbshadow {
+	filter:progid:DXImageTransform.Microsoft.Shadow(Color=#333333,Direction=120,strength=5);
+}
+
+
+/*表格半透明效果*/
+.alpha {filter:alpha(opacity=50);}
+.alpha td{color:#000000;position:relative;}
+
+
+/*------------------------------------------------------------------------------------------*/
+
+
+/*全局form边距，设置为零*/
+form {margin:0;}
+
+
+/*全局select样式，如果需要特殊效果美化请联系美工组，特殊效果不适于广泛应用，只有对个别页面效果要求很高时才使用*/
+select {
+	font:normal 9pt "宋体",arial;
+	color:#000000;
+	background-color:#F6F6F6;
+}
+
+
+/*全局输入域样式，自动影响单行输入域、多行输入域、单选框radio、复选框checkbox、默认按钮*/
+input,textarea {
+	font:normal 9pt "宋体",arial;
+	color:#000000;
+	border:1px solid #666666;
+	border-top:1px solid #000000;
+	border-left:1px solid #000000;
+	background-color:#F6F6F6;
+	/*color:expression((this.readOnly)?"#808080":"");*/
+	border-width:expression((type=="radio"||type=="checkbox")?"0":"");/*保留此行基本可以达到效率和美观兼顾的效果*/
+	/*background-color:expression((type=="radio"||type=="checkbox")?"transparent":"");*/
+}
+
+
+/*下划线单行录入框样式*/
+.inputline {
+	font:normal 9pt "宋体",arial;
+	color:#000000;
+	border:0;
+	/*下行中的线型可以是solid、dashed、dotted*/
+	border-bottom:1px solid #000000;
+	background-color:transparent;
+}
+
+
+/*特殊效果选框样式*/
+.radio {
+	width:50px;
+	height:50px;
+    background-color:#F2F2F2;
+}
+
+
+/*自定义按钮样式 ，将 class="button" 添加到按钮的<input>处，
+受上述"全局输入域样式"影响的按钮变成"自定义按钮样式"*/
+/*2-3个汉字的按钮*/
+.button {
+	width:45px;
+	height:20px;
+	font:normal 9pt "宋体",arial;
+	color:#000000;
+	border:0;
+	padding:3 2 0 2;
+	background-color:transparent;
+	background-image:url(button.gif);
+	cursor:hand;
+}
+
+
+/*4-6个汉字的按钮*/
+.button4 {
+	width:80px;
+	height:20px;
+	font:normal 9pt "宋体",arial;
+	color:#000000;
+	border:0;
+	padding:3 2 0 2;
+	background-color:transparent;
+	background-image:url(button4.gif);
+	cursor:hand;
+}
+
+
+/*7-9个汉字的按钮*/
+.button7 {
+	width:120px;
+	height:20px;
+	font:normal 9pt "宋体",arial;
+	color:#000000;
+	border:0;
+	padding:3 2 0 2;
+	background-color:transparent;
+	background-image:url(button7.gif);
+	cursor:hand;
+}
+
+
+/*10-12个汉字的按钮*/
+.button10 {
+	width:150px;
+	height:20px;
+	font:normal 9pt "宋体",arial;
+	color:#000000;
+	border:0;
+	padding:3 2 0 2;
+	background-color:transparent;
+	background-image:url(button10.gif);
+	cursor:hand;
+}
+
+
+/*页面跳转按钮,通常是写着go的圆形或正方的图标*/
+.gobutton {
+	width:20px;
+	height:20px;
+	font:normal 9pt "宋体",arial;
+	color:#000000;
+	border:0;
+	padding:2 0 0 1;
+	background-color:transparent;
+	background-image:url(go.gif);
+	cursor:hand;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+
+
+/*限制表格单元格线为细线*/
+.bordercollapse{
+	border-collapse:collapse;
+
+}
+
+
+/*实线方框*/
+.box {
+	font:normal 9pt "宋体",arial;
+	color:#000000;
+	border:1px solid #FF6666;
+}
+
+/*虚线方框（白底蓝边）*/
+.menubox {
+	font:normal 9pt "宋体",arial;
+	color:#000000;
+	border:1px dashed #59aad4;
+	background-color:#ffffff;
+}
+.menubox tr {height:25px;}
+.menubox td {padding:5px;}
+
+/*虚线方框（蓝底蓝边）*/
+.rbox {
+	font:normal 9pt "宋体",arial;
+	color:#000000;
+	border:1px solid #9ddaf4;
+	background-color:#eefaff;
+	
+}
+.rbox tr {height:25px;}
+.rbox td {padding:10px; line-height:200% }
+
+/*虚线方框，IE5下无效*/
+.dashbox {
+	font:normal 9pt "宋体",arial;
+	color:#000000;
+	border:1px dashed #FF6666;
+}
+
+
+/*虚线，IE5无效*/
+.dashline {border-bottom:1px dashed #FF6666;}
+
+
+/*自定义水平线样式，至少占用1行高度*/
+.hr 
+{ 
+	/*下行中的线型可以是solid、dashed、dotted*/
+	border:1px dashed #000000; 
+	height:1px;
+	width:80%;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+
+
+/*字体加粗*/
+.bold{font-weight: bold !important;}
+
+
+/*文字下划线样式*/
+.underline {
+	font:normal 9pt "宋体",arial;
+	text-decoration:underline;
+}
+
+
+/*中英文数字不换行*/
+.wordkeep {
+	word-break:keep-all;
+	word-wrap:nowrap;
+	/*下行使句中中文标点停顿处也不换行,IE5无效*/
+	white-space:nowrap;
+}
+
+
+/*英文数字或单词强制换行*/
+.wordbreak {
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+
+/*字间距*/
+.lettersp {letter-spacing: 0.5em;}
+
+
+.lettersp34 {
+	letter-spacing: 6px;
+}
+
+
+.lettersp56 {
+	letter-spacing: 3px;
+}
+
+.lettersp78 {
+	letter-spacing: 2px;
+}
+
+.lettersp90 {
+	letter-spacing: 4px;
+}
+
+
+
+
+/*自定义文章标题*/
+.txttitle {
+	font:bold 11pt "宋体",arial;
+	color:#000000;
+	text-align:center;
+}
+
+/*自定义文章标题*/
+.rtxttitle {
+	font:bold 9pt "宋体",arial;
+	color:#006699;
+	text-align:left;
+}
+
+.rtxttitle_red {
+	font:bold 14pt "宋体",arial;
+	color:#ff0000;
+	text-align:left;
+}
+
+
+/*自定义背景标题*/
+.mtitle {
+	font:bold 11pt "宋体",arial;
+	color:#000000;
+	text-align:center;
+	background-color:#eefaff;
+	background-image:url(titlebg);
+	background-repeat:repeat-x;
+	background-position:top;
+}
+
+/*自定义背景标题*/
+.menutitle {
+	font:normal 9pt "宋体",arial;
+	color:#006699;
+	text-align:left;
+	padding-left:30px;
+	padding-top:2px;
+}
+
+/*发光标题或文字*/
+.txtglow {
+	font:bold 11pt "宋体",arial;
+	color:#FFFFFF; 
+	filter:glow(color=#000000, strength=1) dropshadow(color=#000000, offx=2, offy=1, positive=1); 
+}
+
+
+/*阴影文字*/
+.txtshadow {
+	font:normal 9pt "宋体",arial;
+	color:#FFFFFF; 
+	filter:dropshadow(color=#000000, offx=1, offy=1);
+}
+	
+	
+/*浮雕文字*/
+.txtshadow2 {
+	font:normal 9pt "宋体",arial;
+	color:#000000; 
+	filter:dropshadow(color=#FFFFFF, offx=1, offy=1);
+}
+
+
+/*中文竖排,IE5无效*/
+.vtext {
+	writing-mode:tb-rl; 
+	vertical-align:bottom;
+}
+
+
+/*高度设置，用于定制文字行间距或单元格的高度，如果需要其他高度值请在此处自行添加*/
+/*文字行间距，单位可以是%，em，px*/
+.lh200,.lh200 td{line-height:200% !important;}
+.lh150,.lh150 td{line-height:150% !important;}
+.lh120,.lh120 td{line-height:120% !important;}
+/*表格行高、单元格高度，单位px*/
+.trh50px,.trh50px tr,.tdh50px,.tdh50px td{height:50px;}
+.trh30px,.trh30px tr,.tdh30px,.tdh30px td{height:30px;}
+.trh25px,.trh25px tr,.tdh25px,.tdh25px td{height:25px;}
+.trh20px,.trh20px tr,.tdh20px,.tdh20px td{height:20px;}
+
+
+/*对齐方式*/
+.left{text-align:left !important;}
+.center{text-align:center !important;}
+.right{text-align:right !important;}
+.top{vertical-align:top !important;}
+.bottom{vertical-align:bottom !important;}
+
+
+/*自定义背景色*/
+.bgc_vlightyellow {background-color:#FFFEF1;}	/*下行颜色为很浅的黄*/
+.bgc_white{background-color: #FFFFFF;}			/*白色*/
+.bgc_whiteblue{background-color: #F2F8FD;}		/*极浅的蓝白色*/
+.bgc_darkblue{background-color: #006cb7;}		/*深蓝*/
+.bgc_orenge{background-color: #DD561F;}			/*橙色*/
+
+
+/*文字颜色*/
+.white {color:#FFFFFF;}				/*白色*/
+.orenge {color:#FF6600;}			/*橙色*/
+.lightred {color:#FF6666;}			/*浅红*/
+.red{color:#FF0000 ;}				/*红色*/
+.alittledarkred {color:#CC0000;}	/*深红*/
+.gray{color:#666666;}				/*灰色*/
+.blue {color:#3366FF;}				/*蓝色*/
+.darkblue {color:#3366CC;}			/*深蓝*/
+.darkgreen {color:#336633;}			/*深绿*/
+.orenge2 {color:#DD561E;}			/*橙色*/
+
+
+/*------------------------------------------------------------------------------------------*/
+ul,li,a{
+	/*list-style-type:none;*/
+	font:normal 9pt "宋体",arial; 
+	color:000000;
+	}
+
+#leftMenu {
+	margin: 0px;
+}
+
+#leftMenu li {
+	color:#000000;
+	font:normal 9pt "宋体",arial; 
+	height:20px;
+	margin:0px;
+}
+
+#leftMenu li ul {
+	margin:0px;
+	padding:6px 0px 0px 15px;
+}
+
+.mul a:link {font-size:9pt; color:#6b6b6b; text-decoration:none;}
+.mul a:visited {font-size:9pt; color:#6b6b6b; text-decoration:none;}
+.mul a:active {font-size:9pt; color:#b68308; text-decoration:none;}
+.mul a:hover {font-size:9pt; color:#b68308; text-decoration:none;}	
+
+.mul2 a:link {font-size:9pt; color:#b68308; text-decoration:underline;}
+.mul2 a:visited {font-size:9pt; color:#b68308; text-decoration:underline;}
+.mul2 a:active {font-size:9pt; color:#6b6b6b; text-decoration:none;}
+.mul2 a:hover {font-size:9pt; color:#6b6b6b; text-decoration:none;}
+
+.Closed ul {display:none;}
+.Opened ul {display:''; }

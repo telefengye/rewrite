@@ -1,0 +1,23 @@
+1623829457729	Rename type 'Struts1Action'
+1623829473572	Rename package 'com.sx.struts1.action'
+1623829483900	Rename package 'com.sx.struts1.dao'
+1623829496212	Rename type 'Struts1Dao'
+1623829512008	Rename package 'com.sx.struts1.form'
+1623829521805	Rename type 'Struts1FromBean'
+1623829531711	Rename package 'com.sx.struts1.value'
+1623829544382	Rename type 'Struts1ValueBean'
+1623829743688	Rename type 'LoginFromBean'
+1623830330230	Rename resource 'struts1'
+1623830397978	Rename resource '1.jsp'
+1623831594128	Copy file
+1623831617522	Delete element
+1623831622162	Delete element
+1623835543656	Copy file
+1623835550995	Copy file
+1623835840486	Delete element
+1623837387691	Copy package
+1623837455797	Copy package
+1623837487500	Copy folders
+1623837490348	Copy file
+1623837499320	Copy packages
+1623837606437	Copy elements

@@ -1,0 +1,60 @@
+
+<select name="selprovince" size="1" style="width:100"></select>
+<select name="selarea" size="1" style="width:100"></select>
+<select name="selstreet" size="1" style="width:100"></select>
+<select name="selhouse" size="1" style="width:100"></select>
+<br>
+<select name="selprovince1" size="1" style="width:100"></select>
+<select name="selarea1" size="1" style="width:100"></select>
+<select name="selstreet1" size="1" style="width:100"></select>
+<select name="selhouse1" size="1" style="width:100"></select>
+
+<script language="javascript" src="selectlink.js"></script>
+
+<script language="javascript">
+<!--
+/*
+menu=<%=region_code%>;
+selector = [ "region1", "region2","region3","region4"];
+menu1=<%=zy_code%>;
+selector1 = [ "dzy1", "dzy2"];
+var f = new SelectLink(menu,selector);
+var f1 = new SelectLink(menu1,selector1);
+var objs = [f,f1];
+wizz(0,0);
+wizz(0,1);
+*/
+
+//规则字符串
+//选择框的名字
+selector1 = [ "selprovince", "selarea","selstreet"];
+selector2 = [ "selprovince1", "selarea1","selstreet1"];
+
+menu = ["建筑","001",true,true,["无","000",false,false,["无","000",false,false,null],"类别1","001",true,true,["新增1","001",false,false,null,"新增2","002",true,true,null]]];
+//-->
+var slobj1 = new SelectLink(menu,selector1);
+var slobj2 = new SelectLink(menu,selector2);
+var objs = [slobj1,slobj2];
+
+wizz(0,0);
+wizz(0,1);
+</script>
+
+
+<script language="javascript" src="checkbox.js"></script>
+<form name="form1">
+<input type="checkbox" value="1" name="check">
+<input type="checkbox" value="1" name="check">
+<input type="checkbox" value="1" name="check">
+<input type="checkbox" value="1" name="checkall" onclick="checkMAC(check,checkall,checkcan)">
+<input type="checkbox" value="1" name="checkcan" onclick="checkMCA(check,checkcan,checkall)">
+
+
+<input type="checkbox" value="1" name="checkac111" onclick="checkAC(check,checkac111)">
+
+
+<input type="checkbox" value="1" name="checka" onclick="selCheck(1,0,checka,checkc)">
+<input type="checkbox" value="1" name="checkc" onclick="selCheck(1,0,checkc,checka)">
+
+
+</form>

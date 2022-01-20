@@ -1,0 +1,10 @@
+#Mon Nov 29 11:41:21 CST 2021
+TOMCAT_HOME=D\:\\IDEA_Project\\jxjdpt_rewrite\\Tomcat_4.x
+TOMCAT_TEMP=D\:\\IDEA_Project\\jxjdpt_rewrite\\Tomcat_4.x\\temp
+LIBRARY_PATH="D\:\\JDK1.4\\bin;D\:\\IDEA_Project\\jxjdpt_rewrite\\Tomcat_4.x\\bin"
+TOMCAT_BASE=D\:\\IDEA_Project\\jxjdpt_rewrite\\Tomcat_4.x
+ENDORSED_DIRS="D\:\\IDEA_Project\\jxjdpt_rewrite\\Tomcat_4.x/common/endorsed"
+eclipse.preferences.version=1
+JDK_HOME=D\:\\JDK1.4
+OPT_VM_ARGS=-Xms512m -Xmx1024m -XX\:PermSize\=256m -XX\:MaxPermSize\=256m
+SERVER_ENABLEMENT=true

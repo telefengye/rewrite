@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- config file for database connection pools, written by YangXiPing "yangxiping@btamail.net.cn" -->
+<DBCPOOLS>
+<!--   	<DSN name="rbacn"
+		 dbms="oracle"
+		 driver="oracle.jdbc.driver.OracleDriver"
+		 url="jdbc:oracle:thin:@130.10.7.211:1521:ortest2"
+		 uid="rbac"
+		 pwd="rbac"
+		 minconnections="2"
+		 maxconnections="5"
+		 timeout="600"
+		 timewait="1000"
+		 ctl_wait="3"
+		 mon_wait="3"
+		 idle_proc="true"
+		 idle_minutes="10"
+		 logcfg_file="logxcfg.xml"
+		 logcfg_name="app"
+		 comment="for test"
+	/> -->
+	<DSN name="rbacn"
+		 dbms="oracle"
+		 driver="oracle.jdbc.driver.OracleDriver"
+		 url="jdbc:oracle:thin:@130.10.7.201:1521:bjldlsc"
+		 uid="syrbac161202"
+		 pwd="syrbac161202"
+		 minconnections="10"
+		 maxconnections="20"
+		 timeout="1"
+		 timewait="10"
+		 ctl_wait="3"
+		 mon_wait="3"
+		 idle_proc="true"
+		 idle_minutes="10"
+		 logcfg_file="logxcfg.xml"
+		 logcfg_name="app"
+		 comment="for test"
+	/>
+  
+</DBCPOOLS>
+

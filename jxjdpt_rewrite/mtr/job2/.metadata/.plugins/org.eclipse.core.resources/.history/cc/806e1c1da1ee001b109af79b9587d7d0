@@ -1,0 +1,33 @@
+package com.sx.main;
+
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
+
+public class JsonMain {
+
+	
+	public static void main(String[] args) {
+//		m.put("2", "2");
+//		m.put("3", "3");
+//		m.put("4", "4");
+//		m.put("5", "5");
+		JSONObject m = new JSONObject();
+		m.put("1", "1");
+		
+		
+		JSONObject m1 = new JSONObject();
+		m1.put("6", m1);
+		
+		
+		JSONArray arr = new JSONArray();
+		arr.add(m);
+		
+		JSONObject authorization = new JSONObject();
+        authorization.put("authorization","test-361D86C3984E4FDD97DE3BEB5F579ECF");
+		System.out.println(m.toString());
+		System.out.println(m1.toString());
+		System.out.println(arr.toString());
+		System.out.println(authorization.toString());
+		
+	}
+}

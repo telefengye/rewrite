@@ -1,0 +1,1890 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sx-config>
+	
+	<!-- 文件上传的配置信息 -->
+	<upload-config  type="com.sx.conf.UploadConfig">
+		<!-- 文件上传的最大限制(k) -->
+		<file-maxsize>102400</file-maxsize>
+		<!-- 读取到内存中最大限制(k) -->
+		<load-maxsize>4096</load-maxsize>
+		<!-- 文件如果超出内存读取的最大限制，要产生临时文件，临时文件的存放目录，相对与root的相对路径 -->
+		<temp-path>sysfiles</temp-path>
+		<!-- 文件上传到服务器端目录，相对与root的相对路径 -->
+		<file-path>sysfiles</file-path>
+		<!-- 文件上传到服务器端目录，绝对路径 -->
+		<file-absolute-path>D:\upload</file-absolute-path>
+	</upload-config>
+	<!-- 文件上传-->
+	<upload-modular-config type="com.sx.conf.UploadModularConfig">
+	<item>
+		<!-- 模块名称-->
+		<modename>shgyx</modename>
+		<!-- 允许上传文件类型-->
+		<allowfiletype>doc,docx,jpg,xls,xlsx</allowfiletype>
+		<!-- 不允许上传文件类型-->
+		<exludefiletype>exe</exludefiletype>
+		<!-- 最大文件大小-->
+		<maxfilesize>10000000</maxfilesize>
+		<!-- 模块名称-->
+	</item>
+	<item>
+		<!-- 模块名称-->
+		<modename>word</modename>
+		<!-- 允许上传文件类型-->
+		<allowfiletype>doc,docx</allowfiletype>
+		<!-- 不允许上传文件类型-->
+		<exludefiletype>exe</exludefiletype>
+		<!-- 最大文件大小-->
+		<maxfilesize>10000000</maxfilesize>
+		<!-- 模块名称-->
+	</item>
+	<item>
+		<!-- 模块名称-->
+		<modename>excel</modename>
+		<!-- 允许上传文件类型-->
+		<allowfiletype>xls,xlsx</allowfiletype>
+		<!-- 不允许上传文件类型-->
+		<exludefiletype>exe</exludefiletype>
+		<!-- 最大文件大小-->
+		<maxfilesize>10000000</maxfilesize>
+		<!-- 模块名称--> 
+	</item>
+	<item>
+		<!-- 模块名称-->
+		<modename>zyjsfw</modename>
+		<!-- 允许上传文件类型-->
+		<allowfiletype>doc,docx</allowfiletype>
+		<!-- 不允许上传文件类型-->
+		<exludefiletype>exe</exludefiletype>
+		<!-- 最大文件大小-->
+		<maxfilesize>10000000</maxfilesize>
+		<!-- 模块名称-->
+	</item>
+	</upload-modular-config>
+	
+	
+	<!-- rbac的配置信息 -->
+	<rbac-config type="com.sx.conf.RbacConfig">
+		<!-- 7.205 -->
+		<!-- <rbacurl>http://130.10.7.205:5555/rbac</rbacurl> -->
+		<!-- <rbacurl>http://130.10.7.205:8080/rbac</rbacurl> -->
+		<!-- <rbacurl>http://130.10.8.70:6700/rbac</rbacurl> -->
+		<rbacurl>http://130.10.8.70:6700/rbac</rbacurl>
+		<rbactype>rbac</rbactype>
+		<manageuser>test</manageuser>
+		<depttreesid>000000</depttreesid>
+	</rbac-config>  
+  
+	<!-- pfpki的配置信息 -->
+	<pfpki-config type="com.sx.ldlsc.conf.PfPkiConfig">
+		<pfpkisoapurl>:8080/axis/services/AAService</pfpkisoapurl>
+	</pfpki-config>
+	<!-- dba的配置信息 -->
+	<dba-config type="com.sx.conf.DbaConfig">
+		<dbs>bjldlsc</dbs>
+		<cfgfile>bjldlsc.xml</cfgfile>
+		<driver>oracle.jdbc.driver.OracleDriver</driver>
+	</dba-config>
+
+	<log-config type="com.sx.conf.LogConfig">
+		<logxcfg>logxcfg.xml</logxcfg>
+		<app>app</app>
+		<debug>true</debug>
+	</log-config>
+	
+   	<!-- dba的配置信息,支持多数据源  new-->
+	<multi-db-config type="com.sx.conf.MultiDbConfig">
+		<item>
+			<dbs>BINFO</dbs>
+			<cfgfile>bjldlsc.xml</cfgfile>
+			<driver>oracle.jdbc.driver.OracleDriver</driver>
+			<default>false</default>
+		</item>
+		<item>
+			<dbs>bjldlsc</dbs>
+			<cfgfile>bjldlsc.xml</cfgfile>
+			<driver>oracle.jdbc.driver.OracleDriver</driver>
+			<default>true</default>
+		</item>
+	</multi-db-config>
+
+   	<!--log的配置信息 new-->
+    <!--
+    <app-log type="com.sx.conf.AppLogConfig">
+        <value>com.sx.pfmgr.user.log.PfMgrLog</value>
+    </app-log> 
+    -->
+	<!-- 数据类型转换 -->
+	<!-- 
+    <convert type="com.sx.conf.ConvertConfig">
+        <date>true</date>
+    </convert>
+	-->
+
+
+	<!-- app的配置信息 -->
+	<app-config type="com.sx.conf.AppConfig">
+		<appcontext>/bjldlsc</appcontext>
+		<pagecountbyh>12</pagecountbyh>
+		<pagecountbyv>25</pagecountbyv>
+	</app-config>
+
+	<!-- 数据库操作事件配置信息 -->
+	<!-- 
+	<db-event type="com.sx.conf.DbEventConfig">
+		<enable>true</enable>
+		<isasync>false</isasync>
+		
+		<savedbs>bjldlsc</savedbs>
+		
+		<packages>com.sx.ldlsc.rlzyfwxk.xzhz.service</packages>
+		<defaultListener>
+		<className>com.sx.ldlsc.rlzyfwxk.common.SjjhListener</className>
+		</defaultListener>
+	</db-event>
+	-->
+	
+	<!-- action的配置信息 -->
+	<action-config type="com.sx.conf.ActionConfig">
+		<actionexec>true</actionexec>
+		<actionexecclassname>com.sx.ldlsc.common.LdlscActionExecute</actionexecclassname>
+	</action-config>
+	
+	<!--log的配置信息  new-->
+	<action-inc type="com.sx.conf.ActionIncConfig">
+        <value>com.sx.ldlsc.common.LdlscCzrz</value>
+    </action-inc>
+	
+
+	<remote-base-config type="com.sx.remote.base.conf.RemoteBaseConf">
+		<remoteRowsSize>100</remoteRowsSize>
+		<!-- 远程访问的方式 也请不要修改 -->
+		<remoteType>webservices</remoteType>
+		<!-- 远程配置文件的路径 最好不要修改 -->
+		<remoteCfgfile>WEB-INF/bksx-remote-config.xml</remoteCfgfile>
+		<!-- 下面是可以调用的远程方法 -->
+	</remote-base-config>
+	
+	<!-- 劳动力市场监管平台 -->
+	<ldlscjgpt-app-config type="com.sx.ldlsc.jgpt.conf.LdlscJgptAppConfig">
+		<!-- 自动服务开始时间 -->
+		<zdfwkssj>000000</zdfwkssj>
+		<!-- 自动服务结束时间 -->
+		<zdfwjssj>035959</zdfwjssj>
+		<!-- 高峰自动服务间隔时间 -->
+		<zdgfjgsj>15</zdgfjgsj>
+		<!-- 高峰自动服务开始时间 -->
+		<zdfwgfkssj>090000</zdfwgfkssj>
+		<!-- 高峰自动服务结束时间 -->
+		<zdfwgfjssj>180000</zdfwgfjssj>
+		<!-- 统计周期起日期 -->
+		<tjzqqrq>25</tjzqqrq>
+		<!-- 统计周期止日起 -->
+		<tjzqzrq>24</tjzqzrq>
+		<!-- 业务高峰期维护表开始时间点(单位：天) -->
+		<zdfwywgfqsjd>60</zdfwywgfqsjd>
+		<!-- 重复推荐成功数周期-->
+		<cftjcgszq>90</cftjcgszq>
+		<!-- 分页 -->
+		<fyys>50</fyys>
+		<!-- 补贴金额标准-->
+		<btjebz>20</btjebz>
+	</ldlscjgpt-app-config>
+	
+	<!-- 宏观决策的配置信息 -->
+	<hgjc-config type="com.sx.ldlsc.conf.HgjcConfig">
+		<hgjc restype="01" classname="com.sx.ldlsc.ldbsjsb.ywhd.Ldbsjsb" yxrq="25" yxsj="02" tjrq="25">劳动部数据上报</hgjc>
+		<hgjc restype="01" classname="com.sx.ldlsc.syry.ywhd.hgjc.Hgjc" yxrq="25" yxsj="02" tjrq="25">失业人员</hgjc>
+		<hgjc restype="01" classname="com.sx.ldlsc.syry.ywhd.hgjc.Hgjc" yxrq="16" yxsj="02" tjrq="16">失业人员</hgjc>
+		<hgjc restype="02" classname="com.sx.ldlsc.syry.ywhd.ldbjk.Hgjc" yxrq="26" yxsj="08" tjrq="25">失业人员</hgjc>
+		<!--  
+ 		<hgjc restype="05" classname="com.sx.ldlsc.zj.ywhd.hgjc.Hgjc" yxrq="01" yxsj="01" tjrq="01">职业介绍</hgjc>
+ 		-->
+ 		<hgjc restype="05" classname="com.sx.ldlsc.zyjsfw.conf.zdfw.hgjc.Hgjc" yxrq="01" yxsj="01" tjrq="01">职业介绍服务</hgjc>
+ 		<hgjc restype="10" classname="com.sx.ldlsc.zypx.ywhd.hgjc.ywcl.Hgjc" yxrq="01" yxsj="02" tjrq="01">技能培训</hgjc> 
+		<hgjc restype="50" classname="com.sx.ldlsc.ljyjt.ywhd.hgjc.Hgjc" yxrq="25" yxsj="02" tjrq="25">零就业家庭</hgjc> 
+		<hgjc restype="15" classname="com.sx.ldlsc.yhzc.ywhd.hgjc.Hgjc" yxrq="25" yxsj="03" tjrq="25">优惠政策</hgjc>
+		<hgjc restype="15" classname="com.sx.ldlsc.yhzc.ywhd.hgjc.Hgjc" yxrq="01" yxsj="03" tjrq="01">优惠政策</hgjc>
+	</hgjc-config>
+	
+	<!-- 劳动部数据上报 -->
+	<ldbsjsb-app-config type="com.sx.ldlsc.ldbsjsb.conf.LdbsjsbAppConfig">
+		<!-- 监管平台数据库用户名 -->
+		<JGPTDBNAME>bjldlsc_jgpt</JGPTDBNAME>
+		<!-- 文件生成日期 -->
+		<WJSCRQ>25</WJSCRQ>
+		<!-- 文件生成时间 -->
+		<WJSCSJ>04</WJSCSJ>
+	</ldbsjsb-app-config>
+	
+	<!-- 职工分流安置管理 -->
+	<zgflazgl-app-config type="com.sx.ldlsc.zgflazgl.conf.ZgflazglAppConfig">
+		<!-- 报表互动日期 -->
+		<BBHDRQ>05</BBHDRQ>
+		<!-- 报表互动时间 -->
+		<BBHDSJ>00</BBHDSJ>
+		<!-- 跟踪互动时间 -->
+		<GZHDSJ>01</GZHDSJ>
+	</zgflazgl-app-config>
+	
+	<!-- syry的配置信息 -->
+	<syry-app-config type="com.sx.ldlsc.syry.conf.SyryAppConfig">
+		<!-- 新报表统计日期 -->
+        <xbbtjrq>21</xbbtjrq>
+        <zcjfqxrq>18</zcjfqxrq>
+        <zcjfqxsj>06</zcjfqxsj>
+		<zcjfqxjs>23</zcjfqxjs>
+		
+		<bbtjrq>25</bbtjrq>
+		<!--  求职证有效期 以月为单位  
+		<qzzyxq>12</qzzyxq>
+		求职证核验提醒的开始天数，天为单位
+		<qzzhytxksts>30</qzzhytxksts>
+		求职证核验提醒的结束天数，天为单位
+		<qzzhytxjsts>60</qzzhytxjsts>
+		求职证核验的开始天数，天为单位
+		<qzzhyksts>30</qzzhyksts>
+		求职证核验的结束天数，天为单位
+        <qzzhyjsts>30</qzzhyjsts>
+		求职证过期注销的开始天数，天为单位
+        <qzzzxksts>30</qzzzxksts>
+		生育医疗补助比例
+        <syylbzbl>100</syylbzbl>
+		失业保险申领期限 以天为单位
+        <sybxslqx>60</sybxslqx>
+		退休提示期限 以月为单位
+        <txtsqx>2</txtsqx>
+		a4纵向打印行数
+        <a4zxdyhs>25</a4zxdyhs>
+		北京市行政区划
+        <bjsxzqh>110000000000</bjsxzqh>
+		报表统计日期
+            
+		医保报表统计日期
+        <ybbbtjrq>26</ybbbtjrq>   
+    	抽样程序运行日期
+        <cycxyxrq>15</cycxyxrq>  
+   		新增个人存档抽取人数
+        <xzgrcdCqrs>300</xzgrcdCqrs>  
+    	新增单位人员抽取人数
+        <xzdwryCqrs>200</xzdwryCqrs>  
+    	实有失业人员抽取人数
+        <sysyryCqrs>1200</sysyryCqrs>  	
+		上传图片大小上限 单位：M
+        <sctpdxsx>2</sctpdxsx>	
+    	取消失业保险金退回申请审批日期
+        <qxsybxthsqsprq>20</qxsybxthsqsprq> -->	 
+	</syry-app-config>
+
+	
+	<!-- zj的配置信息 -->
+	<zj-app-config type="com.sx.ldlsc.zj.conf.ZjAppConfig">
+	<!-- 北京职介dwid-->
+		<bjzjdwid>0000000001</bjzjdwid>
+	<!-- 北京职介Rbac的dwid-->
+		<bjzjrbacdwid>0000000013</bjzjrbacdwid>
+	<!-- 北京残联dwid-->
+		<bjcldwid>1000000811</bjcldwid>
+	<!-- 北京残联Rbac的dwid-->
+		<bjclrbacdwid>1000000812</bjclrbacdwid>
+	<!-- 最小年龄-->
+		<minage>16</minage>
+	<!-- 最大年龄-->
+		<maxage>60</maxage>
+	<!--单位记录数跳转（个人条件匹配时如查询匹配的单位数超过此参数，则显示单位信息，否则显示查询单位的工种信息）-->
+		<dwjlstz>5</dwjlstz>
+	<!-- 报表单位查询范围参数，对应com.sx.rbac.RbacOperation类中的getChilddept和getAllChilddept方法中的typeid参数-->
+		<typeid>03</typeid>
+	<!-- 报表第一段第一列\第二列-->
+        <nld11>16</nld11>
+        <nld12>24</nld12>
+	<!-- 报表第二段第一列\第二列-->
+        <nld21>25</nld21>
+        <nld22>34</nld22>
+	<!-- 报表第三段第一列\第二列-->
+        <nld31>35</nld31>
+        <nld32>44</nld32>
+	<!-- 报表第四段第一列\第二列-->
+        <nld41>45</nld41>
+        <nld42>999</nld42>
+		<czzj>0000000013</czzj>
+        <czy>000046</czy>
+		<!-- 自动处理参数 -->
+        <clsj>25</clsj><!-- 每天处理的时间大于等于00小于等于24，单位：小时 -->
+		<clsjjg>1800</clsjjg><!-- 每处理一次的时间间隔大于等于1800小于等于3600 单位：秒-->
+		<!-- 报表第一季度统计开始时间 MMdd-->
+		<bbd1jdks>1225</bbd1jdks>
+		<!-- 报表第一季度统计结束时间 MMdd-->
+		<bbd1jdjs>0324</bbd1jdjs>
+		<!-- 报表第二季度统计开始时间 MMdd-->
+		<bbd2jdks>0325</bbd2jdks>
+		<!-- 报表第二季度统计结束时间 MMdd-->
+		<bbd2jdjs>0624</bbd2jdjs>
+		<!-- 报表第三季度统计开始时间 MMdd-->
+		<bbd3jdks>0625</bbd3jdks>
+		<!-- 报表第三季度统计结束时间 MMdd-->
+		<bbd3jdjs>0924</bbd3jdjs>
+		<!-- 报表第四季度统计开始时间 MMdd-->
+		<bbd4jdks>0925</bbd4jdks>
+		<!-- 报表第四季度统计结束时间 MMdd-->
+		<bbd4jdjs>1224</bbd4jdjs>
+		<!--新报表每月生成日期-->
+		<old_bbscrq>25</old_bbscrq>
+		<!-- 新静态报表生成时间-->
+		<!-- 时间大于等于00小于等于24，单位：小时 -->
+		<old_bbscsj>00</old_bbscsj>
+		
+		<!--2011.12.07新增开始  -->
+		
+		<!-- 报表第一季度统计开始时间 MMdd-->
+		<new_bbd1jdks>1218</new_bbd1jdks>
+		<!-- 报表第一季度统计结束时间 MMdd-->
+		<new_bbd1jdjs>0317</new_bbd1jdjs>
+		<!-- 报表第二季度统计开始时间 MMdd-->
+		<new_bbd2jdks>0318</new_bbd2jdks>
+		<!-- 报表第二季度统计结束时间 MMdd-->
+		<new_bbd2jdjs>0617</new_bbd2jdjs>
+		<!-- 报表第三季度统计开始时间 MMdd-->
+		<new_bbd3jdks>0618</new_bbd3jdks>
+		<!-- 报表第三季度统计结束时间 MMdd-->
+		<new_bbd3jdjs>0917</new_bbd3jdjs>
+		<!-- 报表第四季度统计开始时间 MMdd-->
+		<new_bbd4jdks>0918</new_bbd4jdks>
+		<!-- 报表第四季度统计结束时间 MMdd-->
+		<new_bbd4jdjs>1217</new_bbd4jdjs>
+		<!--新报表每月生成日期-->
+		<new_bbscrq>18</new_bbscrq>
+		<!-- 静态报表生成时间-->
+		<!-- 时间大于等于00小于等于24，单位：小时 -->
+		<new_bbscsj>00</new_bbscsj>
+		
+		<!--2011.12.07新增结束  -->
+		
+		<!-- 报表每月生成日期-->
+		<bbscrq>01</bbscrq>
+		<!-- 静态报表生成时间-->
+		<!-- 时间大于等于00小于等于24，单位：小时 -->
+		<bbscsj>00</bbscsj>
+		
+		<!-- 每张报表的每个线程执行的djzj数量 -->
+		<bbxczxzjs>50</bbxczxzjs>
+		<!-- 最低薪酬-->
+		<zdxc>920</zdxc>
+		<!--  个人、单位信息查询导出记录条数 --> 
+		<datalength>1000</datalength> 
+		<!--  招聘成功人数占招聘总人数的比例(即时监控报表) --> 
+		<blcs>70</blcs> 
+		<!-- 社区岗位报表每月生成日期 -->
+		<sqgwcsrq>28</sqgwcsrq>
+		<!-- 社区岗位报表生成时间-->
+		<!-- 时间大于等于00小于等于24，单位：小时 -->
+		<sqgwscsj>00</sqgwscsj>
+		<!-- 时间大于等于00小于等于24，单位：小时 -->
+		<frkplgxsj>23</frkplgxsj>
+		<!--就业困难人员静态表 -->
+		<!-- 时间大于等于00小于等于24，单位：小时 -->
+		<jyknkssj>00</jyknkssj>
+		<!-- 核查信息静态表生成时间、日期 -->
+		<hcbbscrq>1</hcbbscrq>
+		<hcbbscsj>00</hcbbscsj>
+		<!-- 新核查信息静态表生成时间、日期 -->
+		<xhcbbscrq>25</xhcbbscrq>
+		<xhcbbscsj>00</xhcbbscsj>
+		<!--结转启动时间-->
+		<jzqdsj>2016012400</jzqdsj>
+		<!--结转开始时间 数据库中存在2015年的数据需归档-->
+		<jzkssj>20141225</jzkssj>
+		<!--结转结束时间 不包括当天-->
+		<jzjssj>20151225</jzjssj>
+		<!-- 推送 -->
+		<tssj>14,15,16</tssj>
+		<new_wblwdjbbscsj>00</new_wblwdjbbscsj>
+		<new_wblwdjbbscrq>25</new_wblwdjbbscrq>
+		<!-- 信息核查分页数 -->
+		<xxhc_pagecount>5</xxhc_pagecount>
+		
+		<!-- 在线学习培训-不及格分数 -->
+		<zxxxpx_bjgfs>0,60</zxxxpx_bjgfs> 
+		<!-- 在线学习培训-良好分数 -->
+		<zxxxpx_lhfs>60,85</zxxxpx_lhfs> 
+		<!-- 在线学习培训-优秀分数 -->
+		<zxxxpx_yxfs>85</zxxxpx_yxfs> 
+		<!-- 在线学习培训-应参加人员结束时间 -->
+		<zxxxpx_ycjryjssj>20160920</zxxxpx_ycjryjssj>  
+		<!-- 在线学习培训-服务结束日期 -->
+        <zxxxpx_fwjsrq>20160930</zxxxpx_fwjsrq>
+        <!-- 在线学习培训-服务开始时间 -->
+        <zxxxpx_fwkssj>02</zxxxpx_fwkssj>
+        <!-- 在线学习培训-资源id-->
+        <zxxxpx_resourcecode>00000003d0</zxxxpx_resourcecode>
+        <!-- 个人职业测评分页 -->
+        <grzycp_pagecount>6</grzycp_pagecount>
+        
+        <!-- 去产能初始年月 -->
+		<qcncsny>20170727</qcncsny>
+        <!-- 去产能年度初始月份 -->
+        <qcnndcsyf>1125</qcnndcsyf>
+		<!-- 去产能互动开始时间 -->
+        <qcnhdkssj>00</qcnhdkssj>
+        
+        <!-- 在线学习培训学习（区）参数设置开始 -->
+		<!-- 在线学习培训-应参加人员结束时间 -->
+		<zxxxpx_q_ycjryjssj>20170901</zxxxpx_q_ycjryjssj>
+		<!-- 在线学习培训-服务结束日期 -->
+		<zxxxpx_q_fwjsrq>20170930</zxxxpx_q_fwjsrq>
+		<!-- 在线学习培训-服务开始时间 -->
+		<zxxxpx_q_fwkssj>02</zxxxpx_q_fwkssj>
+		<!-- 在线学习培训-资源id -->
+		<zxxxpx_q_resourcecode>00000003d0</zxxxpx_q_resourcecode>
+		<!-- 在线学习培训学习（区）参数设置结束 -->
+		<!-- 在线学习培训应该参加人员特殊标识 -->
+		<zxxxpx_ycjrytsbz>ft201709</zxxxpx_ycjrytsbz>
+        <!-- 职业测评结果分析打印适合职业数 -->
+        <zycpjg_shzys>10</zycpjg_shzys>
+	</zj-app-config>
+	
+	<!-- zyjsfw的配置信息 -->
+	<!-- <zyjsfw-app-config type="com.sx.ldlsc.zyjsfw.conf.ZyjsfwAppConfig">
+		就业困难人员互动开始时间
+		<jykn_hdsj>00</jykn_hdsj>
+		安置人员互动开始时间
+		<azry_hdsj>00</azry_hdsj>
+		分类指导团体单位数
+		<flzd_ttdws>20</flzd_ttdws>
+		分类指导团体人员数
+		<flzd_zdrys>20</flzd_zdrys>
+		统计分析—单位核查报表生成日期：每月 ？日
+		<tjfx_dwhcbbrq>25</tjfx_dwhcbbrq>
+		统计分析—单位核查报表生成时间 ：？时
+		<tjfx_dwhcbbsj>00</tjfx_dwhcbbsj>
+		指导团体自动结束自动服务时间
+		<flzd_ttzdjssj>00</flzd_ttzdjssj>
+		指导团体进行天数（多少天后自动结束）
+		<flzd_ttjxts>3</flzd_ttjxts>
+		案例统计开始年
+		<altjksn>2017</altjksn>
+		论文统计开始年
+		<lwtjksn>2009</lwtjksn>
+		日常服务检测统计开始年
+		<rcfwjcksn>2007</rcfwjcksn>
+		职业测评匹配度条数
+		<zycp_ppdts>30</zycp_ppdts>
+		职业测评匹配度完全/完全不匹配条数
+		<zycp_ppbppts>10</zycp_ppbppts>
+		面试5星好评时间
+		<msmrpjkssj>00</msmrpjkssj>
+		未业务操作120天求职状态变更
+		<qzztbgkssj>00</qzztbgkssj>
+		热门工种 hxz begin
+		热门工种线程开始时间
+		<rmgzkssj>00</rmgzkssj>
+		满足热门工种的 求职人数 名次限制
+		<rmgzqzrsmc>5</rmgzqzrsmc>		
+		满足热门工种的 空岗人数 名次限制 sum
+		<rmgzkgrsmc>5</rmgzkgrsmc>		
+		热门工种 over hxz
+		行政区划/工种/行业/困难地区四级联动开始时间
+		<sjldkssj>00</sjldkssj>
+		困难地区互动开始时间
+		<kndqkssj>00</kndqkssj>
+		招聘会互动开始时间
+		<zph_hdsj>00</zph_hdsj>
+		单位岗位归档时间
+		<dwgw_gdsj>00</dwgw_gdsj>
+		精细化报表每月生成日时间
+		<jxhbb_r>25</jxhbb_r>
+		精细化报表每日生成时时间
+		<jxhbb_s>00</jxhbb_s> 
+		薪酬报表每日生成日时间
+		<jtxcbb_r>21</jtxcbb_r>
+		薪酬报表每日生成时时间
+		<jtxcbb_s>00</jtxcbb_s>
+		供求报表每日生成日时间
+		<jtxcbb_r>21</jtxcbb_r>
+		供求报表每日生成时时间
+		<jtxcbb_s>00</jtxcbb_s>
+		上报报表月报统计日期
+		<sbbbyb_tjrq>25</sbbbyb_tjrq>
+		上报报表月报统计时间
+		<sbbbyb_tjsj>00</sbbbyb_tjsj>
+		上报报表季报统计日期
+		<sbbbjb_tjrq>21</sbbbjb_tjrq>
+		上报报表季报统计时间
+		<sbbbjb_tjsj>00</sbbbjb_tjsj>
+		在线学习培训-不及格分数
+		<zxxxpx_bjgfs>0,60</zxxxpx_bjgfs> 
+		在线学习培训-良好分数
+		<zxxxpx_lhfs>60,85</zxxxpx_lhfs> 
+		在线学习培训-优秀分数
+		<zxxxpx_yxfs>85</zxxxpx_yxfs> 
+		在线学习培训-应参加人员结束时间
+		<zxxxpx_ycjryjssj>20160920</zxxxpx_ycjryjssj>  
+		在线学习培训-应参加人员结束时间
+		<zxxxpx_q_ycjryjssj>20170930</zxxxpx_q_ycjryjssj>
+		在线学习培训应该参加人员特殊标识
+		<zxxxpx_ycjrytsbz>ft201709</zxxxpx_ycjrytsbz>
+		在线学习培训-服务结束日期
+        <zxxxpx_fwjsrq>20160930</zxxxpx_fwjsrq>
+        在线学习培训-服务开始时间
+        <zxxxpx_fwkssj>02</zxxxpx_fwkssj>
+        在线学习培训-服务结束日期
+		<zxxxpx_q_fwjsrq>20170930</zxxxpx_q_fwjsrq>
+		在线学习培训-服务开始时间
+		<zxxxpx_q_fwkssj>02</zxxxpx_q_fwkssj>
+		  在线学习培训-资源id
+        <zxxxpx_resourcecode>0000960490</zxxxpx_resourcecode>
+        在线学习培训-资源id
+		<zxxxpx_q_resourcecode>0000960490</zxxxpx_q_resourcecode>
+		最低薪酬
+		<zdxc>2000</zdxc>
+		获取信息发布数据时间间隔 单位（分钟） 2位
+		<xxfbsjjg>30</xxfbsjjg>
+		在线学习培训开始时间
+		<zxxxpx_kssj>20180101</zxxxpx_kssj>
+		在线学习培训结束时间
+		<zxxxpx_jssj>20180601</zxxxpx_jssj>
+		宏观报表每月生成日时间
+		<hgbb_r>25</hgbb_r>
+		宏观报表每日生成时时间
+		<hgbb_s>00</hgbb_s> 
+		指导人员rbac
+		<rbac_typeid>00000000</rbac_typeid>
+		未业务操作变更求职状态天数
+		<qzztts>180</qzztts>
+	</zyjsfw-app-config> -->
+
+	<!-- ldrsdl的配置信息 -->
+	<ldrsdl-app-config type="com.sx.ldlsc.ldrsdl.conf.LdrsdlAppConfig">
+	<!-- 存档人员年龄(男)-->
+		<cdryNln>60</cdryNln>
+	<!-- 存档人员年龄(女)-->
+		<cdryNlnv>50</cdryNlnv>
+		
+	<!-- 2008-11-18wb增加针对超龄续保人员年龄限制-->
+	<!-- 存档人员超龄续保年龄(男)-->
+		<cdryClxbNln>65</cdryClxbNln>
+	<!-- 存档人员超龄续保年龄(女)-->
+		<cdryClxbNlnv>55</cdryClxbNlnv>
+		
+	<!-- 党员缴费标准-->
+		<dyJfbz>2</dyJfbz>
+	<!-- 商调函期限-->
+		<sdhQx>15</sdhQx>
+	<!-- 党组织关系接转期限-->
+		<dzzgxJzsx>15</dzzgxJzsx>
+
+	<!-- 退休管理======综合补贴(非少数民族)-元-->
+		<zhbtFssmz>14750</zhbtFssmz>
+	<!-- 退休管理======综合补贴(少数民族)-元-->
+		<zhbtSsmz>14950</zhbtSsmz>
+	<!-- 退休管理======养老金计发比例20％-->
+		<yljJfbl>20</yljJfbl>
+	<!-- 退休管理======封定金额比例1％-->
+		<fdjeBl>1</fdjeBl>
+	<!-- 退休管理======个人帐户比例120％-->
+		<grzhBl>120</grzhBl>
+
+	<!-- 协议默认查询的天数======事务提醒(协议自动续签提醒)-天-->
+		<xyMrxcts>10</xyMrxcts>
+	<!-- 协议自动续签延长时限======一次自动续签所跨年(单位:年)-->
+		<xyzdxqYcsx>1</xyzdxqYcsx>
+
+	<!-- 公积金缴费比例======个人8%-->
+		<grgjjjfBl>8</grgjjjfBl>
+	<!-- 公积金缴费比例======单位8%-->
+		<dwgjjjfBl>8</dwgjjjfBl>
+	<!-- 保险缴费年度截止月======03月-->
+		<bxjfndjzy>03</bxjfndjzy>
+	<!-- 保险缴费年度截止月======06月-->
+		<bxjfndjzy2>06</bxjfndjzy2>
+	<!-- 保险续签截止月日======03月31日-->
+		<bxxqjzyr>0331</bxxqjzyr>
+	<!-- 统计分析中统计截止日_存档======21日-->
+		<tjbbjzr_cd>21</tjbbjzr_cd>
+	<!-- 统计分析中统计截止日_保险======21日-->
+		<tjbbjzr_bx>21</tjbbjzr_bx>
+	<!-- 养老失业缴费截止日(表四、表十一标志)======21日-->
+		<ylsyjfjzr_bx>21</ylsyjfjzr_bx>
+    <!-- 基本医疗转出日期======25日-->
+		<jbylzcrq>25</jbylzcrq>
+	<!-- 存档人员年龄(距退休月)======6月-->
+		<cdryJtxY>6</cdryJtxY>
+		<!-- 查询倒出人员上限条数========2000条-->
+		<dcryCs>2000</dcryCs>
+	<!-- 区分是否宣武报表11、12========040001=====与存档编号单位ID比较-->
+		<xwbxZJb>0000950160</xwbxZJb>
+		<!-- 查询单位下缴费人员分页上限人数========50人-->
+		<dwjfryfysxCs>50</dwjfryfysxCs>
+		
+		<!-- 保险自动续签开始日期========每年4月1日-->
+		<bxzdxqksrq>0401</bxzdxqksrq>
+		<!-- 保险自动续签结束日期========每年4月20日-->
+		<bxzdxqjsrq>0420</bxzdxqjsrq>
+		<!-- 保险自动续签开始时间========每天000000-->
+		<bxzdxqkssj>235959</bxzdxqkssj>
+		<!-- 保险自动续签开始日期========每天055959-->
+		<bxzdxqjssj>235959</bxzdxqjssj>
+		
+		
+        <!-- 非税收发票维护参数 ========每本张数 -->
+        <fsfpcs>25</fsfpcs>
+        
+        <!--  保险补缴特殊单位ID =======单位ID -->
+        <bxbjtsdwid>0000000013,0000070000</bxbjtsdwid>
+        
+        <!-- 劳动人事代理统计分析工作量统计中的操作员机构树用到的参数，对应com.sx.rbac.RbacOperation类中的方法中的typeid参数-->
+		<typeid>00</typeid>
+		
+		<!-- 男视同年限 -->
+		<nanstnx>25</nanstnx>
+		<!-- 女视同年限 -->
+		<nvstnx>20</nvstnx>
+		<!-- 西城职介ID -->
+		<xczjid>0000000058</xczjid>
+		<!-- 小票号增加值 -->
+		<xphzjz>5000</xphzjz>
+		 <!--  自动服务开始时间  --> 
+ 		 <zdfwkssj>01000000</zdfwkssj> 
+		<!--  自动服务结束时间 --> 
+  		<zdfwjssj>01035959</zdfwjssj> 
+		<!--  目标机构ID  20150623修改--> 
+ 		 <mbjgid>0000000018</mbjgid> 
+		<!-- 缴费最大截止日期 -->
+		<jfzdjzrq>2014-12</jfzdjzrq>
+		<!-- 数据导入朝阳易才单位编号 -->
+		<ycdwbh>fb0ac2a947d500</ycdwbh>
+		<!-- 数据导入朝阳易才单位登记时间 -->
+		<ycdwdjsj>20161024104117</ycdwdjsj>
+		
+	</ldrsdl-app-config> 
+
+<!-- yhzc的配置信息 -->
+	<yhzc-app-config type="com.sx.ldlsc.yhzc.conf.YhzcAppConfig">
+	<!-- 预警开始日期 为每月一号 -->
+	<yjrq>1</yjrq>
+	<!-- 其他管理参数 -->
+	<qtglScxzlj>yhzc/qtgl</qtglScxzlj>  
+  <!-- 自谋职业参数 -->
+	<!-- 女年龄-->
+		<zmzyVnl>40</zmzyVnl>
+	<!-- 男年龄-->
+		<zmzyNnl>50</zmzyNnl> 
+	<!-- 享受期限女年龄点-->  
+		<zmzyXsqxVnld>45</zmzyXsqxVnld>
+	<!-- 享受期限男年龄点-->
+		<zmzyXsqxNnld>55</zmzyXsqxNnld>
+	<!-- 最长享受月数， 单位：月-->  
+		<zmzyZcxsys>60</zmzyZcxsys>
+	<!-- 最短享受月数， 单位：月-->
+		<zmzyZdxsys>36</zmzyZdxsys>
+	<!-- 超过缴费时限多少天被冻结， 单位：天-->
+		<zmzyCgjfsxts>30</zmzyCgjfsxts>
+	<!-- 未报告经营状况提醒天数， 单位：天-->
+		<zmzyWbgjyzkTxts>30</zmzyWbgjyzkTxts>
+	<!-- 延长享受月数， 单位：月-->
+		<zmzyYcxsys>24</zmzyYcxsys>
+	<!-- 每月最迟缴费日期， 单位：日-->
+		<zmzyMyzcjfrq>12</zmzyMyzcjfrq>
+	<!-- 按月缴费享受开始年月时间点，格式：yyyyMM-->
+		<zmzyAyjfXsksnySjd>200605</zmzyAyjfXsksnySjd>
+	<!-- 延长申请提前月数（相对于享受结束年月） 单位：月-->
+		<zmzyYcsqtqys>2</zmzyYcsqtqys>
+	<!--  自谋灵活停止人员花名册程序上线日--> 
+  	<zmlhTzryhmccxSxrq>20081127</zmlhTzryhmccxSxrq> 
+	<!-- 零就业家庭女年龄-->
+		<zmzyLjyjtVnl>35</zmzyLjyjtVnl>
+	<!-- 零就业家庭男年龄-->
+		<zmzyLjyjtNnl>40</zmzyLjyjtNnl>
+
+	  
+  <!-- 灵活就业参数 -->
+    <!-- 女年龄-->
+		<lhjyVnl>40</lhjyVnl>
+	<!-- 男年龄-->
+		<lhjyNnl>45</lhjyNnl>
+
+	<!-- 享受期限女年龄点-->  
+		<lhjyXsqxVnld>45</lhjyXsqxVnld>
+
+	<!-- 享受期限男年龄点-->
+		<lhjyXsqxNnld>55</lhjyXsqxNnld>
+	<!-- 最长享受月数， 单位：月-->   
+		<lhjyZcxsys>60</lhjyZcxsys>
+	<!-- 最短享受月数， 单位：月-->
+		<lhjyZdxsys>36</lhjyZdxsys>
+
+	<!-- 超过缴费时限多少天被冻结， 单位：天-->  
+		<lhjyCgjfsxts>30</lhjyCgjfsxts>
+	<!-- 未报告提醒天数， 单位：天-->
+		<lhjyWbgTxts>30</lhjyWbgTxts>
+	<!-- 每月最迟缴费日期， 单位：日-->
+		<lhjyMyzcjfrq>12</lhjyMyzcjfrq>
+	<!-- 新老政策时间点(享受开始年月)，单位：yyyyMM -->
+		<lhjyXlzcSjd>200702</lhjyXlzcSjd>
+	<!-- 零就业家庭女年龄-->
+		<lhjyLjyjtVnl>35</lhjyLjyjtVnl>
+	<!-- 零就业家庭男年龄-->
+		<lhjyLjyjtNnl>40</lhjyLjyjtNnl>
+	<!-- 延长申请提前月数（相对于享受结束年月） 单位：月-->
+		<lhjyYcsqtqys>2</lhjyYcsqtqys>
+
+
+	<!-- 灵活就业新政- 手机号码校验-->
+	<lhjyxzregphone>^1[34578]\d{9}$</lhjyxzregphone>
+	<!-- 灵活就业新政-扣款未成功生成短信时间   ddHH -->
+	<lhjyxzkkwcgscdxsj>1812</lhjyxzkkwcgscdxsj>
+	<!-- 灵活就业新政-扣款未成功短信内容时间   dd -->
+	<lhjyxzkkwcgdxnrsj>18</lhjyxzkkwcgdxnrsj>
+	<!-- 灵活就业新政-推送人员缴费金额生成短信时间  MMddHH -->
+	<lhjyxztsryjfjescdxsj>070110</lhjyxztsryjfjescdxsj>
+	<!-- 灵活就业新政-推送人员缴费金额短信内容时间   MMdd -->
+	<lhjyxztsryjfjedxnrsj>0731</lhjyxztsryjfjedxnrsj>
+	<!-- 灵活就业新政-需填写报告人员生成短信提醒时间    若有多个用逗号隔开  ddHH,ddHH,ddHH  -->
+	<lhjyxzxtxbgrydxscsj>0112,1512,2512</lhjyxzxtxbgrydxscsj>
+	<!-- 灵活就业新政-未填写报告自动停止享受服务开始时间   若有多个用逗号隔开  ddHH,ddHH-->
+	<lhjyxzwtxbgzdtzsj>0101,0201</lhjyxzwtxbgzdtzsj>
+	<!-- 灵活就业新政-发送短信间隔时间  单位：秒  -->
+	<lhjyxzfsdxjgsj>5</lhjyxzfsdxjgsj>
+	<!-- 灵活就业新政-发送短信发送开始时间     HH-->
+	<lhjyxzfsdxkssj>09</lhjyxzfsdxkssj>
+	<!-- 灵活就业新政-发送短信发送结束时间      HH-->
+	<lhjyxzfsdxjssj>18</lhjyxzfsdxjssj>
+	<!-- 灵活就业新政-短信子号码 -->
+	<lhjyxzdxzhm>111111</lhjyxzdxzhm>
+	<!-- 灵活就业新政-更新流程表中停止状态时间      HH -->
+	<lhjyxzytzzt>03</lhjyxzytzzt>
+	<!--  灵活就业新政-复核确认系统备份花名册静态表生成日期   dd  -->
+	<lhjyxzfhqrhmcDate>01</lhjyxzfhqrhmcDate>
+	<!-- 灵活就业新政-复核确认系统备份花名册静态表生成时间（24h） -->
+	<lhjyxzfhqrhmcTime>01</lhjyxzfhqrhmcTime>
+	<!-- 灵活就业新政-需填写报告人员(每3个月中的第1、2个月)生成短信时间  ddHH  -->
+	<lhjyxzxtxbgrytwodxscsj>2512</lhjyxzxtxbgrytwodxscsj>
+
+	<!--   新签截止时间 -->
+	<xqjzsj>20200101</xqjzsj>
+
+<!-- 自谋灵活互动参数 -->
+    <!-- 扣款日期、医保反馈退费 -->
+		<zmlhhdKkrq>18</zmlhhdKkrq>
+	<!-- 扣款时间、医保反馈退费 -->
+		<zmlhhdKksj>2</zmlhhdKksj>
+
+	<!-- 增减日期 -->
+		<zmlhhdZjbtrq>25</zmlhhdZjbtrq>
+	<!-- 增减时间 -->
+		<zmlhhdZjbtsj>2</zmlhhdZjbtsj>
+
+	<!-- 社保反馈日期 -->  
+		<zmlhhdSbfkrq>3</zmlhhdSbfkrq>
+	<!-- 社保反馈时间 -->  
+		<zmlhhdSbfksj>2</zmlhhdSbfksj>
+
+	<!-- 医保反馈日期 -->  
+		<zmlhhdYbfkzjrq>3</zmlhhdYbfkzjrq>
+	<!-- 医保反馈时间 -->  
+		<zmlhhdYbfkzjsj>2</zmlhhdYbfkzjsj>
+    <!-- 异常数据处理生成数据月份判断 25日以前上月，以后当月-->
+        <zmlhhdYcsjclsjscyfpd>25</zmlhhdYcsjclsjscyfpd>    
+	<!--  上传图片大小上限 单位：M-->
+		<sctpdxsx>1</sctpdxsx>
+	<!--  上传图片格式 如果有多个，用英文逗号分隔-->
+		<sctpgs>jpg</sctpgs>
+
+  <!-- 营业税等额补助参数 -->
+    <!-- 营业税等额补助享受月数-->
+		<yysdebzYs>36</yysdebzYs>
+    <!-- 营业税等额享受人员比例数-->
+		<yysdebzXsrybl>50</yysdebzXsrybl>
+	<!-- 申请延迟天数，单位：天 13个月-->
+		<yysdebzSqycts>390</yysdebzSqycts>
+
+  <!-- 单位岗补社补参数 -->
+    <!-- 新老政策招聘备案日期-->
+		<dwgbsbXlzcHtksrq>2006-07-01</dwgbsbXlzcHtksrq>
+    <!-- 申请延时月数（每年合同结束年月后延月数）-->
+		<dwgbsbSqysys>13</dwgbsbSqysys>
+	<!-- 岗补女年龄点-->  
+		<dwgbVnld>40</dwgbVnld>
+	<!-- 岗补男年龄点-->
+		<dwgbNnld>50</dwgbNnld>
+	<!-- 社补合同期内最长享受年数， 单位：年-->   
+		<dwsbHtqnZcxsns>5</dwsbHtqnZcxsns>
+	<!-- 社补合同期内最短享受年数， 单位：年-->
+		<dwsbHtqnZdxsns>3</dwsbHtqnZdxsns>
+	<!-- 社补5年(长)女年龄点-->  
+		<dwsbCVnld>40</dwsbCVnld>
+	<!-- 社补5年(长)男年龄点-->
+		<dwsbCNnld>50</dwsbCNnld>
+	<!-- 社补3年(短)女年龄点-->  
+		<dwsbDVnld>35</dwsbDVnld>
+	<!-- 社补3年(短)男年龄点-->
+		<dwsbDNnld>40</dwsbDNnld>
+	<!-- 岗补社补请示批复重复可否录入， 1:可录入,0:不能录入-->
+		<dwgbsbQspfwhCfKlr>0</dwgbsbQspfwhCfKlr>
+	<!-- 用于页面显示首钢单位-->
+		<dwgbsbYmxsSg>首钢公司</dwgbsbYmxsSg>
+    <!-- 社补合同开始年月与首次缴纳保险年月最多相差几个月 -->
+		<dwsbHtksnyScjnbxny>1</dwsbHtksnyScjnbxny>
+	<!-- 首页显示**天内批复情况，单位：天数 -->
+		<dwgbsbSypfts>30</dwgbsbSypfts>
+
+  <!-- 大龄下岗 -->
+    <!-- 大龄下岗人员录入屏蔽标志位 -->
+		<dlxgRylrpbbzw>0</dlxgRylrpbbzw>
+
+ <!-- 社区公益性 -->
+    <!-- 社区公益性延迟申请月数 -->
+		<sqgyxYcsqys>60</sqgyxYcsqys>
+	<!-- 申请区资金时一次最多申请月数 -->
+		<sqgyxYcsqys2>12</sqgyxYcsqys2>
+	<!-- 女年龄-->
+		<sqgyxVnl>35</sqgyxVnl>
+	<!-- 男年龄-->
+		<sqgyxNnl>40</sqgyxNnl>
+ <!--岗补社补公益性业务互动 -->
+	<!-- 每次发送数据量 -->
+		<mcfssjl>40</mcfssjl>
+	<!-- 市审核自动服务启动时间 -->
+		<dwgbSshzdfwQdsj>02</dwgbSshzdfwQdsj>
+
+<!-- 受灾企业优惠政策 -->
+<!--数据上报系统网址 -->
+		<sjsbxtwz>www.bjld.gov.cn/app/szqy</sjsbxtwz>
+	    <!--困难企业补贴上传路径  -->
+		<knqybtsclj>knqy</knqybtsclj>
+		<!--受灾企业优惠政策——医保社保数据交换,查询条件开始交换时间    ddHH-->
+		<cxtjsj>0402</cxtjsj>
+		<!--受灾企业优惠政策—医保社保数据交换,查询结果开始交换时间    ddHH-->
+		<cxjgsj>0502</cxjgsj>
+		<!--数据交换数量  -->
+		<sjjhsl>100</sjjhsl>
+		<!--受灾企业优惠政策——医保社保数据交换,开始缴费年月  -->
+		<ksjfny>201212</ksjfny>
+		<!--受灾企业优惠政策——医保社保数据交换,结束缴费年月  -->
+		<jsjfny>201501</jsjfny>   
+
+
+<!--报表统计期限  参数为统计开始日期，如果为01，按自然月统计，否则为上月日期-->	
+	<!-- 社区公益性：社区公益性就业组织招用就业困难人员季(年)报表 -->
+		<sqgyxTjrq>28</sqgyxTjrq>	
+	<!-- 用款计划：个人优惠政策统计开始日期-->
+		<ykjhGrjfTjrq>13</ykjhGrjfTjrq>
+	<!--岗补,社补,营业税享受再就业经费情况汇总表-->
+		<gbsbyysXszjyjfqkHzbKsrq>25</gbsbyysXszjyjfqkHzbKsrq>
+	<!--岗补,社补,营业税批复一览表-->
+		<gbsbyysPfylbKsrq>25</gbsbyysPfylbKsrq>
+	<!--岗补,社补,营业税享受人数统计表-->
+		<gbsbyysXsrsbKsrq>25</gbsbyysXsrsbKsrq>
+    <!-- 静态报表统计开始日期 -->
+		<jtbbtjksrq>25</jtbbtjksrq>
+	<!-- 静态报表运行日期时间 -->
+	    <jtbbyxrqsj>2513</jtbbyxrqsj>
+	<!-- 20180419 优惠政策新增静态报表 自动服务启动时间 月日时 -->
+	<jtbb_MdH>122502</jtbb_MdH>
+	<!-- 20180419 优惠政策新增静态报表 初始从第n年统计(历史开始年) -->
+	<jtbb_lsksn>2015</jtbb_lsksn>
+
+<!--与宏观决策数据交换，得到用款计划实际使用情况-->	
+	<!-- url-->
+		<url>http://172.24.15.229:8080/SwitchPlatform/services/webservice</url>
+	<!-- type-->
+		<type>yhzc</type>
+	<!-- name-->
+		<name>bksx</name>
+	<!-- uid-->
+		<uid>test</uid>
+	<!-- qxbm-->
+		<qxbm>test</qxbm>
+	<!-- pid-->
+		<pid>test</pid>
+	<!-- sid-->
+		<sid>06.04.113.01</sid>
+
+
+<!-- 公共参数 -->
+	<!--用款计划首钢企业是否显示， 1:显示,0:不显示-->	
+		<ykjhSgqySfxs>0</ykjhSgqySfxs>
+	<!-- a4纵向打印行数 -->
+        <a4zxdyhs>25</a4zxdyhs>
+	<!-- 业务互动 -->
+		<ywhd>0</ywhd>
+	<!-- 后台线程启动开始时间 单位：时-->
+		<qdKssj>1</qdKssj>
+	<!-- 后台线程启动结束时间 单位：时-->
+		<qdJssj>8</qdJssj>
+	<!-- 处理时间间隔  单位：秒 (86400秒 24小时)-->
+		<clsjjg>86400</clsjjg>
+
+	<!--离线复核下载打包目录-->
+	<!--灵活就业离线复核下载打包目录-->
+		<fhdbxzml>yhzc/lhjy/</fhdbxzml>
+	<!--自谋职业离线复核下载打包目录-->
+		<zmfhdbxzml>yhzc/zmzy/</zmfhdbxzml>
+	<!--社区公益性离线复核下载打包目录-->
+		<gyxfhdbxzml>yhzc/sqgyx/</gyxfhdbxzml>
+	<!--打包程序每天运行时间-->
+		<scfhwjsj>00</scfhwjsj>  
+    <!--服务器web端口号,根据服务器开放端口号不同进行更改-->
+		<bdfwdkh>80</bdfwdkh>
+	<!-- 业务材料归档打包路径  -->
+		<fhxzml>yhzc/clgd</fhxzml>
+	<!-- 业务材料归档自动服务时间 -->
+		<clgdsj>21</clgdsj>
+
+	</yhzc-app-config>
+<!--优惠政策_困难企业平台社保医保互动接口 begin   -->
+	<knqyybsb-jhpt-config type="com.sx.ldlsc.yhzc.knqybt.sbyb.KnqyYbSbAppConfig" ywhdjhpturl="http://192.168.60.60/SwitchPlatform/services/webservice">
+		<knqyybtj-jhpt  type="yb" sid="22.02.15.01"  md="getSZQYFeeInfo" name="bksx" uid="test" qxbm="test" pid="test" ></knqyybtj-jhpt>
+		<knqyybjg-jhpt  type="yb" sid="22.02.15.01"  md="retSZQYFeeInfo" name="bksx" uid="test" qxbm="test" pid="test" ></knqyybjg-jhpt>
+        <knqysbtj-jhpt  type="sb" sid="22.01.03.01"  md="getCxtj" name="bksx" uid="test" qxbm="test" pid="test" ></knqysbtj-jhpt>
+        <knqysbjg-jhpt  type="sb" sid="22.01.03.01"  md="getJfjl" name="bksx" uid="test" qxbm="test" pid="test" ></knqysbjg-jhpt>
+	</knqyybsb-jhpt-config>
+<!--优惠政策_困难企业平台社保医保互动接口 end   -->
+
+<jggl-app-config type="com.sx.ldlsc.jggl.conf.JgglAppConfig">
+<!--机构管理配置信息-->
+<!--机构管理公共配置信息-->
+	<!--工种等级和职称拆分-技术等级参数-->	
+		<jgglGzdjZccf>6,7,8</jgglGzdjZccf>
+	<!--工种等级和职称拆分-职称等级参数-->	
+		<jgglZcdjCs>1,2,3,4,5</jgglZcdjCs>
+	<!--劳务派遣企业管理人员数-->	
+		<lwpqGlrys>5</lwpqGlrys>
+	<!--经济实体非总承包建筑企业富余人员安置比例-->	
+		<jjstFzcbqyAzfyryBl>70</jjstFzcbqyAzfyryBl>
+	<!--经济实体其他行业企业富余人员安置比例-->	
+		<jjstQtqyAzfyryBl>30</jjstQtqyAzfyryBl>
+	<!--企业实体人员可删除天数-->	
+		<qystrykscts>1</qystrykscts>
+	<!--劳服企业安置人员比例-->	
+		<lfqyAzryBl>60</lfqyAzryBl>
+	<!--本市职介管理人员可删除天数-->	
+		<szjglRyscTs>3</szjglRyscTs>
+	<!--中外职介管理注册资金-->	
+		<zwzjglZczj>30</zwzjglZczj>
+	<!--中外职介管理港澳独资注册资金-->	
+		<zwzjglGadzZczj>12.5</zwzjglGadzZczj>
+	<!--中外职介管理大专和职工作人员数-->	
+		<zwzjglZkyshzzrs>5</zwzjglZkyshzzrs>
+	<!--中外职介管理固定场所面积-->	
+		<zwzjglGdcsmj>50</zwzjglGdcsmj>
+	<!--民办职业技能培训机构管理-申请工种提前天数-->	
+		<zyjnpxjgSqgztqts>50</zyjnpxjgSqgztqts>
+	<!--定期招聘会会后管理次数-->	
+		<dqzpHhgglcs>4</dqzpHhgglcs>
+	<!--职介洽谈会管理业务范围-->	
+		<zjqthglywfw>5</zjqthglywfw>	
+	<!--报表统计日期-->	
+		<bb_tjrq>01</bb_tjrq>
+	<!--报表统计日期-->	
+		<tjrq_01>01</tjrq_01>
+	<!--统计日期_25日-->	
+		<tjrq_25>25</tjrq_25>
+	<!--首页提醒默认个数 5-->	
+		<sytxmrgs>5</sytxmrgs>
+	<!--编辑电子简报时多条记录之间'*'个数 -->
+		<bjjbfgfgs>3</bjjbfgfgs>
+	<!--简报排名每页显示记录数 -->
+		<pagecountjbpm>20</pagecountjbpm>
+</jggl-app-config>
+<!-- ywzhgl的配置信息 -->
+	<ywzhgl-app-config type="com.sx.ldlsc.ywzhgl.conf.YwzhglAppConfig">
+	<!-- 回执期限 以天为单位 -->
+		<hzqx>15</hzqx>
+	<!-- 求职者有效期，天为单位 -->
+		<gryxq>90</gryxq>
+	<!-- 用人单位有效期，天为单位 -->
+		<dwyxq>30</dwyxq>
+	<!-- 单位工种有效期，天为单位 -->
+		<dwgzyxq>30</dwgzyxq>
+	<!-- 个人服务次数 -->
+        <grfwcs>9999</grfwcs>
+	<!-- 单位服务比例 -->
+        <dwfwbl>1.5</dwfwbl>
+	<!-- 单位办公时间 -->
+        <dwbgsj>08:30-11:30;13:30-17:30</dwbgsj>
+	<!-- 个人有效期次数 -->
+        <gryxqcs>1</gryxqcs>
+	<!-- 单位有效期次数 -->
+        <dwyxqcs>1</dwyxqcs>
+	<!-- 操作员办公时间 -->
+        <czybgsj>08:30-11:30;13:30-17:30</czybgsj>
+	<!-- 是否银行发放 -->
+        <sfyhff>0</sfyhff>
+	</ywzhgl-app-config>
+	<!-- 创业指导的配置信息 -->
+	<cyzd-app-config type="com.sx.ldlsc.cyzd.conf.CyzdAppConfig">
+	<!-- 统计日（默认） -->
+		<tjr>28</tjr>
+	<!-- 大数据量时，返回的结果集 (默认120条记录，每页显示12条，分10页)-->
+		<dataRows>120</dataRows>
+	</cyzd-app-config>
+
+	<!-- 职业指导的配置信息 -->
+	<zyzd-app-config type="com.sx.ldlsc.zyzd.conf.ZyzdAppConfig">
+	<!-- 大数据量时，返回的结果集 (默认120条记录，每页显示12条，分10页)-->
+		<dataRows>120</dataRows>
+	<!-- 职业指导经费补贴金额参数(元)-->
+		<jfbtcs>20</jfbtcs>
+		<!-- 20130123yzg新增开始 -->
+		<!-- 静态报表生成日期 -->
+		<jtbbscrq>25</jtbbscrq>
+		<!-- 静态报表生成时间 -->
+		<jtbbscsj>00</jtbbscsj>
+		<!-- 20130123yzg新增结束 -->
+	</zyzd-app-config>
+	
+	<!-- 职业培训的配置信息 -->
+	<zypx-app-config type="com.sx.ldlsc.zypx.conf.PxAppConfig">
+	<!-- 公示自动通过hh -->
+	<qyxtbt_gszdtgHH></qyxtbt_gszdtgHH>
+	
+	
+	<!-- 实训基地经费申请时间上半年的月 6月 -->
+		<sbn_y>06</sbn_y>
+	<!-- 实训基地经费申请时间上半年的日 5-10日 -->
+		<sbn_r>05-10</sbn_r>
+	<!-- 实训基地经费申请时间下半年的月 10月 -->
+		<xbn_y>10</xbn_y>
+	<!-- 实训基地经费申请时间下半年的日 25-30日 -->
+		<xbn_r>25-30</xbn_r>
+		
+	<!-- 统计报表导入执行日期每月的日 2日	 -->
+		<tjbbzx_r>2</tjbbzx_r>
+		
+	<!-- 分页每页显示行数 -->
+	    <pagexshs>20</pagexshs>
+	<!-- 劳动预备制、学制教育 初中 -->
+	<!-- 花名册备案每年开始时间 -->
+		<xzn_ks>0622</xzn_ks>
+	<!-- 花名册备案每年结束时间 -->
+		<xzn_js>0901</xzn_js>
+	<!-- 劳动预备制、学制教育 高中 -->
+	<!-- 花名册备案每年开始时间 -->
+		<gzn_ks>0815</gzn_ks>
+	<!-- 花名册备案每年结束时间 -->
+		<gzn_js>1021</gzn_js>
+	<!-- 经费管理 -->
+	<!-- 创业培训上报时间（就业转失业） -->
+	<!-- 上半年 -->
+		<cy_sks>0315</cy_sks>
+		<cy_sjs>0415</cy_sjs>
+	<!-- 下半年 -->
+		<cy_xks>0915</cy_xks>
+		<cy_xjs>1015</cy_xjs>
+	<!-- 就业转失业人员上报时间 -->
+		<!-- 就业转失业人员上报时间 -->
+		<!-- 一季度 -->
+		<zjyjn_1_ks>0315</zjyjn_1_ks>
+		<zjyjn_1_js>0325</zjyjn_1_js>
+		<!-- 二季度 -->
+		<zjyjn_2_ks>0615</zjyjn_2_ks>
+		<zjyjn_2_js>0625</zjyjn_2_js>
+		<!-- 三季度 -->
+		<zjyjn_3_ks>0915</zjyjn_3_ks>
+		<zjyjn_3_js>0925</zjyjn_3_js>
+		<!-- 四季度 -->
+		<zjyjn_4_ks>1115</zjyjn_4_ks>
+		<zjyjn_4_js>1125</zjyjn_4_js>										
+	<!-- 外来农民工人员上报时间 -->	
+		<wl_1>0320</wl_1>
+		<wl_2>0620</wl_2>
+		<wl_3>1020</wl_3>				
+	<!-- 技师高级技师人员上报时间 每年10.30日前 -->	  
+		<js_js>1030</js_js>		
+	<!-- 其他失业人员上报时间 -->
+	
+	<!-- 报表统计日期 所有报表都是每个月1号跑数据 -->
+        <bbtjrq>01</bbtjrq>
+    <!-- 报表统计日期 新 2012.02.13加 区县录入数据，每月5号自动跑数据 生成市级用户数据，区县手工填报时用，现暂时还未用 -->
+    	<bbtjrq1>05</bbtjrq1>
+    <!-- 统计报表日期2012.02.14加 页面提醒中待录入月报表数是每月这个时间范围内显示、月报表录入每月的这个范围内可以录入 其他时间段内不可以，区县手工填报时用，现暂时还未用 -->
+    	<!-- 时间范围起 -->
+    	<tjbbrqxs>01</tjbbrqxs>
+    	<!-- 时间范围至 -->
+    	<tjbbrqxs1>05</tjbbrqxs1>
+	</zypx-app-config>
+	
+	<!-- nc的配置信息 -->
+	<nc-app-config type="com.sx.ldlsc.ncldl.conf.NcldlAppConfig">
+		<!-- 报表第一季度统计开始时间 MMdd-->
+		<bbd1jdks>0101</bbd1jdks>
+		<!-- 报表第一季度统计结束时间 MMdd-->
+		<bbd1jdjs>0401</bbd1jdjs>
+		<!-- 报表第二季度统计开始时间 MMdd-->
+		<bbd2jdks>0401</bbd2jdks>
+		<!-- 报表第二季度统计结束时间 MMdd-->
+		<bbd2jdjs>0701</bbd2jdjs>
+		<!-- 报表第三季度统计开始时间 MMdd-->
+		<bbd3jdks>0701</bbd3jdks>
+		<!-- 报表第三季度统计结束时间 MMdd-->
+		<bbd3jdjs>1001</bbd3jdjs>
+		<!-- 报表第四季度统计开始时间 MMdd-->
+		<bbd4jdks>1001</bbd4jdks>
+		<!-- 报表第四季度统计结束时间 MMdd-->
+		<bbd4jdjs>0101</bbd4jdjs>
+		<!-- 报表年度统计时间 MMdd-->
+		<bbdndsj>0101</bbdndsj>
+		<!-- 报表统计日期 -->
+        <bbtjrq>01</bbtjrq>
+        <!-- 海淀上线时间 -->
+        <hdsxsj>200812080000000</hdsxsj>
+        <!-- 超过城市化地区建设规定天数 -->
+        <cgcshjsdqgdts>15</cgcshjsdqgdts>
+	</nc-app-config>
+	
+	<!-- cnjt的配置信息 -->
+	<cnjt-app-config type="com.sx.ldlsc.ncldl.cnjt.conf.CnjtAppConfig">	
+		<!-- 报表统计日期 -->
+        <bbtjrq>01</bbtjrq>        
+	</cnjt-app-config>
+	
+	<!-- ljyjt的配置信息 -->
+	<ljyjt-app-config type="com.sx.ldlsc.ljyjt.conf.LjyjtAppConfig">	
+		<!-- a4纵向打印行数 -->
+        <a4zxdyhs>25</a4zxdyhs>
+		<!-- 报表统计日期 -->
+        <bbtjrq>25</bbtjrq>
+        <!-- 自动服务处理参数 -->
+        <clsj>00</clsj><!-- 每天处理的时间大于等于00小于等于24，单位：小时 -->
+		<clsjjg>1800</clsjjg><!-- 每处理一次的时间间隔大于等于1800小于等于3600 单位：秒-->
+	</ljyjt-app-config>
+	<!-- 灾区招聘管理 -->
+	<zqzpgl-app-config type="com.sx.ldlsc.zqzpgl.conf.ZqzpglAppConfig">
+		<!-- 进京补贴 -->
+		<jjbt>160</jjbt>
+		<!-- 职业介绍补贴 -->
+		<zyjsbt>100</zyjsbt>
+		<!-- 陪护人员补贴 -->
+		<phbt>2000</phbt>
+		<!-- 最小年龄-->
+		<minage>16</minage>
+		<!-- 最大年龄-->
+		<maxage>60</maxage>
+	</zqzpgl-app-config>
+	
+	<!-- 农村失业保险的配置信息 -->
+	<!-- <ncsybx-app-config type="com.sx.ldlsc.ncsybx.conf.NcsybxAppConfig">
+	生育医疗补助比例
+        <syylbzbl>100</syylbzbl>
+	失业保险申领期限 以天为单位
+        <sybxslqx>60</sybxslqx>
+	退休提示期限 以月为单位
+        <txtsqx>2</txtsqx>
+	a4纵向打印行数
+        <a4zxdyhs>25</a4zxdyhs>
+    a3横向向打印行数
+        <a3hxdyhs>25</a3hxdyhs>
+	北京市行政区划
+        <bjsxzqh>110000000000</bjsxzqh>
+	报表统计日期
+        <bbtjrq>25</bbtjrq>	
+	医保报表统计日期
+        <ybbbtjrq>26</ybbbtjrq>	
+    取消失业保险金退回申请审批日期
+        <qxsybxthsqsprq>20</qxsybxthsqsprq>	
+	</ncsybx-app-config> -->
+
+	<!--失业动态监测-->
+	<sydtjc-app-config type="com.sx.ldlsc.sydtjc.conf.SydtjcAppConfig">
+		<sshh>13</sshh>
+		<!--上报开始日-->
+		<sbksr>25</sbksr>
+		<!--上报时间月份跨度-->
+		<sbsjyfkd>1</sbsjyfkd>
+		<!--上报截止日-->
+		<sbjzr>24</sbjzr>
+		<!--人事代理抽取比例-->
+		<rsdlCqbl>0.005</rsdlCqbl>
+		<!--失业人员抽取比例-->
+		<syryCqbl>0.01</syryCqbl>
+		<!--档案数量-->
+		<dasl>200</dasl>
+		<!--抽样日期-->
+		<cyrq>0326,0626,0926,1226</cyrq>
+		<!--抽样和录入截止日期-->
+		<updaterq>0410,0705,1010,0110</updaterq>
+		<!--是否进行抽取服务，如果不想让系统进行抽取，将下面参数改成“0”-->
+		<sfjxcqfw>0</sfjxcqfw>
+		<!--填报年月范围-->
+		<tbnyfw>20120100000000</tbnyfw>
+		
+		<!-- 数据交换接收休息时间 秒-->
+        <sjjhsj>300</sjjhsj> 
+    	<!-- 数据交换 发送 classid-->
+        <classid_js>0021</classid_js>
+    	<!-- 数据交换 url_js 接收-->
+    	<url_js>http://130.10.7.143:8070/sjjh/services/DXWebService?wsdl</url_js>
+    	
+	</sydtjc-app-config>
+	
+	<!-- 密云优惠政策的配置信息 -->
+	<myyhzc-app-config type="com.sx.ldlsc.qxbdh.myyhzc.conf.MyyhzcAppConfig">
+	<!-- 最小年龄-->
+		<minage>16</minage>
+		<!-- 最大年龄-->
+		<maxage>60</maxage>		
+	</myyhzc-app-config>
+	
+<!-- 业务互动的配置信息 -->
+	<ywhd-sbyb-config type="com.sx.ldlsc.conf.YwhdSbYbConfig" ywhdsbybdxurl="http://172.24.15.229:80/EntranceService/BusService">
+		<ywhd-sbyb type="r" funid="f10.03.01.01" classname="com.sx.ldlsc.yhzc.ywhd.sbyb.fs.SbryzjFs" usr="test" pwd="test" signature="****" jklx="11" startday="" starttime="" endtime="">与社保系统每月增加人员接口</ywhd-sbyb>
+		<ywhd-sbyb type="r" funid="f10.03.02.01" classname="com.sx.ldlsc.yhzc.ywhd.sbyb.fs.SbryjsFs" usr="test" pwd="test" signature="****" jklx="12" startday="" starttime="" endtime="">与社保系统每月减少人员接口</ywhd-sbyb>
+		<ywhd-sbyb type="r" funid="f10.03.03.01" classname="com.sx.ldlsc.yhzc.ywhd.sbyb.fs.SbrytfFs" usr="test" pwd="test" signature="****" jklx="14" startday="" starttime="" endtime="">与社保系统退费人员接口</ywhd-sbyb>
+		<ywhd-sbyb type="r" funid="f10.03.04.01" classname="com.sx.ldlsc.yhzc.ywhd.sbyb.fs.SbrybjFs" usr="test" pwd="test" signature="****" jklx="13" startday="" starttime="" endtime="">与社保系统补缴人员接口</ywhd-sbyb>
+		<ywhd-sbyb type="r" funid="f10.03.01.02" classname="com.sx.ldlsc.yhzc.ywhd.sbyb.fs.YbryzjFs" usr="test" pwd="test" signature="****" jklx="15" startday="" starttime="" endtime="">与医保系统每月增加人员接口</ywhd-sbyb>
+		<ywhd-sbyb type="r" funid="f10.03.02.02" classname="com.sx.ldlsc.yhzc.ywhd.sbyb.fs.YbryjsFs" usr="test" pwd="test" signature="****" jklx="16" startday="" starttime="" endtime="">与医保系统每月减少人员接口</ywhd-sbyb>
+
+		<ywhd-sbyb type="s" funid="f10.01.01.01" classname="com.sx.ldlsc.yhzc.ywhd.sbyb.js.ywcl.Sbzjfk" usr="test" pwd="test" signature="****" jklx="21" startday="03" starttime="01" endtime="24">社保系统人员增加结果反馈接口</ywhd-sbyb>
+		<ywhd-sbyb type="s" funid="f10.01.02.01" classname="com.sx.ldlsc.yhzc.ywhd.sbyb.js.ywcl.Sbjsfk" usr="test" pwd="test" signature="****" jklx="22" startday="03" starttime="01" endtime="24">社保系统人员减少结果反馈接口</ywhd-sbyb>
+		<ywhd-sbyb type="s" funid="f10.01.03.01" classname="com.sx.ldlsc.yhzc.ywhd.sbyb.js.ywcl.Sbtffk" usr="test" pwd="test" signature="****" jklx="24" startday="03" starttime="01" endtime="24">社保系统人员退费结果反馈接口</ywhd-sbyb>
+		<ywhd-sbyb type="s" funid="f10.01.04.01" classname="com.sx.ldlsc.yhzc.ywhd.sbyb.js.ywcl.Sbbjfk" usr="test" pwd="test" signature="****" jklx="23" startday="03" starttime="01" endtime="24">社保系统补缴结果反馈接口</ywhd-sbyb>
+		<ywhd-sbyb type="s" funid="f10.01.05.01" classname="com.sx.ldlsc.yhzc.ywhd.sbyb.js.ywcl.Sbkkfk" usr="test" pwd="test" signature="****" jklx="25" startday="18" starttime="01" endtime="24">社保系统人员扣款信息接口</ywhd-sbyb>
+		<ywhd-sbyb type="s" funid="f10.02.01.02" classname="com.sx.ldlsc.yhzc.ywhd.sbyb.js.ywcl.Ybzjfk" usr="test" pwd="test" signature="****" jklx="26" startday="01" starttime="01" endtime="24">医保系统人员增加结果反馈接口</ywhd-sbyb>
+		<ywhd-sbyb type="s" funid="f10.02.02.02" classname="com.sx.ldlsc.yhzc.ywhd.sbyb.js.ywcl.Ybjsfk" usr="test" pwd="test" signature="****" jklx="27" startday="01" starttime="01" endtime="24">医保系统人员减少结果反馈接口</ywhd-sbyb>
+		<ywhd-sbyb type="s" funid="f10.03.03.02" classname="com.sx.ldlsc.yhzc.ywhd.sbyb.js.ywcl.Ybtffk" usr="test" pwd="test" signature="****" jklx="28" startday="18" starttime="01" endtime="24">与医保系统退费人员接口</ywhd-sbyb>
+		<ywhd-sbyb type="s" funid="f10.02.05.02" classname="com.sx.ldlsc.yhzc.ywhd.sbyb.js.ywcl.Ybkkfk" usr="test" pwd="test" signature="****" jklx="29" startday="18" starttime="01" endtime="24">医保系统人员扣款信息接口</ywhd-sbyb>
+
+		<ywhd-sbyb type="" funid="f10.01.00.01" classname="com.sx.ldlsc.yhzc.ywhd.sbyb.js.ywcl.getGrjfzt" usr="test" pwd="test" signature="****" jklx="" startday="" starttime="" endtime="">社保个人缴费状态接口</ywhd-sbyb>
+		<ywhd-sbyb type="" funid="f10.02.00.02" classname="com.sx.ldlsc.yhzc.ywhd.sbyb.js.ywcl.getGrjfzt" usr="test" pwd="test" signature="****" jklx="" startday="" starttime="" endtime="">医保个人缴费状态接口</ywhd-sbyb>
+		
+		<ywhd-sbyb type="" funid="f10.01.06.01" classname="com.sx.ldlsc.yhzc.grjfmxcx.GrjfmxCxsetXml" usr="test" pwd="test" signature="****" jklx="" startday="" starttime="" endtime="">社保个人缴费明细查询接口</ywhd-sbyb>
+		<ywhd-sbyb type="" funid="f10.02.06.02" classname="com.sx.ldlsc.yhzc.grjfmxcx.GrjfmxCxsetXml" usr="test" pwd="test" signature="****" jklx="" startday="" starttime="" endtime="">医保个人缴费明细查询接口</ywhd-sbyb>
+	</ywhd-sbyb-config>
+
+	<!--交换平台配置文件-->
+	<ywhd-jhpt-config type="com.sx.ldlsc.ywhd.jhpt.JhptConfig" ywhdjhpturl="ywhdjhpturl">
+		<ywhd-jhpt type="" id="53231323" funid="funid" classname="com.sx.ldlsc.ywhd.jhpt.SerTest" url="url" name="name" uid="uid" qxbm="qxbm" pid="pid"></ywhd-jhpt>
+	</ywhd-jhpt-config>
+
+	<!-- 职业介绍经费补贴的配置信息 -->
+	<zjjfbt-app-config type="com.sx.ldlsc.zjjfbt.conf.ZjjfbtAppConfig">
+		<!-- 最小年龄-->
+		<minage>16</minage>
+		<!-- 最大年龄-->
+		<maxage>60</maxage>
+		<!-- 最低薪酬-->
+		<zdxc>920</zdxc>
+		<sbybhdts>40</sbybhdts>
+	    <sshsbybhdsj>22</sshsbybhdsj>
+	</zjjfbt-app-config>
+
+	<!-- 区县本地化社区监测配置信息 -->
+	<sqjc-app-config type="com.sx.ldlsc.qxbdh.sqjc.conf.SqjcAppConfig">
+		<xzqhdm>110101000000,110103000000</xzqhdm>
+		<zdfwsj>2</zdfwsj>
+	</sqjc-app-config>
+	
+	<!-- 区县本地化社区监测配置信息new -->
+	<sqjc_new-app-config type="com.sx.ldlsc.qxbdh.sqjc_new.conf.SqjcAppConfig">
+		<xzqhdm>110101000000,110103000000</xzqhdm>
+		<zdfwsj>2</zdfwsj>
+	</sqjc_new-app-config>
+	
+	<!-- 区县本地化海淀数据导出配置信息 -->
+	<hdsjdc-app-config type="com.sx.ldlsc.qxbdh.hdsjdc.conf.HdsjdcAppConfig">
+		<xzqhdm>110108000000</xzqhdm>
+		<zdfwsj>2</zdfwsj>
+	</hdsjdc-app-config>
+	
+	<!-- 区县本地化海淀就业政策 -->
+	<hdzc-app-config type="com.sx.ldlsc.qxbdh.hdzc.conf.HdzcConfig">
+		<yksbq>20140505</yksbq><!-- 转移就业-乡镇用款上报日期起 -->
+	</hdzc-app-config>
+		
+	
+	<!-- 失业人员系统与医保系统互动接口 -->
+	<ylbx-app-config type="com.sx.ldlsc.ywhd.syry.conf.YlbxAppConfig">
+	<!-- 个人缴费状态接口业务id -->
+		<grjfztywid>7db5dbf4da6701</grjfztywid>
+	<!-- 每月增加人员接口业务id -->
+		<zyjkywid>7db5dbf4da6702</zyjkywid>
+	<!-- 每月增加人员反馈接口业务id -->
+		<zyfkjkywid>7db5dbf4da6703</zyfkjkywid>
+	<!-- 每月减少人员接口业务id -->
+		<jyjkywid>7db5dbf4da6704</jyjkywid>
+	<!-- 每月减少人员反馈接口业务id -->
+		<jyfkjkywid>7db5dbf4da6705</jyfkjkywid>
+	<!-- 每月补缴人员接口业务id -->
+		<bjjkywid>7db5dbf4da6706</bjjkywid>
+	<!-- 每月补缴人员反馈接口业务id -->
+		<bjfkjkywid>7db5dbf4da6707</bjfkjkywid>
+	<!-- 生成数据日期 -->
+		<jkscsjrq>25</jkscsjrq>
+	<!-- 生成数据时间 -->
+		<jkscsjsj>02</jkscsjsj>
+	<!-- 反馈数据日期 -->
+		<fkjkscsjrq>25</fkjkscsjrq>
+	<!-- 反馈数据时间 -->
+		<fkjkscsjsj>12</fkjkscsjsj>
+	<!-- 不生成数据开始日期 -->	
+		<bscsjksrq>26</bscsjksrq>
+	<!-- 不生成数据结束日期 -->	
+		<bscsjjsrq>04</bscsjjsrq>
+	<!-- 个人缴费状态接口sid -->
+		<sid>05.05.250.01</sid>
+	<!-- 个人缴费状态接口md -->
+		<md>switching</md>
+	<!-- 提供数据接口默认时间 -->
+		<ybhdksrq>20110701000000</ybhdksrq>
+	<!-- url-->
+		<url>http://172.24.15.229:8080/SwitchPlatform/services/webservice</url>
+	<!-- type-->
+		<type>syry</type>
+	<!-- name-->
+		<name>bksx</name>
+	<!-- uid-->
+		<uid>test</uid>
+	<!-- qxbm-->
+		<qxbm>test</qxbm>
+	<!-- pid-->
+		<pid>test</pid>
+	</ylbx-app-config>
+	
+	<!--数据交换平台 -->
+	<dx-conf type="com.sx.ldlsc.ywhd.dx.DXConfig_Server">
+		
+		<!--
+				一个licence节点代表一个授权单位
+
+
+
+
+				其中id代表生成licence时的licenceid
+				url是用于调用对方webservice的地址，如果没有可以为空
+
+
+
+
+				Key是用于解密时的密钥
+
+
+
+
+		-->
+		<licence id="7db93b8a555701" url="" key="1234567890123456">
+				
+		</licence>
+		<!--授权licence所能访问的所有业务操作-->
+		<!--
+				一个jtyw节点代表每一个具体的业务类
+
+
+
+
+
+				其中type有两种r  receive(接收) s  send(发送)
+				classid对应的是类的编号
+				class是对应的包.类名
+				licenceid是说明该类可以被哪个licence访问
+				
+				这些业务类必须实现DXJK(数据交换接口)				
+		-->					
+		<jtyw type="r" classid="0003" class="com.sx.ldlsc.ywhd.dx.MyYwcl" licenceid="7db93b8a555701"></jtyw>
+				
+		<jtyw type="s" classid="0004" class="com.vic.abc.D" licenceid="7db93b8a555701"></jtyw>			
+							
+	</dx-conf>
+	
+	<!-- 辅助就业互动接口 -->
+	<fzjy-app-config type="com.sx.ldlsc.syry.ywhd.sbyb.conf.FzjyAppConfig">
+		<!-- 辅助就业接口sid -->
+		<sid>08.01.01.01</sid>
+		<!-- 辅助就业接口md -->
+		<md>switching</md>
+		<!-- url-->
+		<url>http://172.24.15.229:8080/SwitchPlatform/services/webservice</url>
+		<!-- type-->
+		<type>syry</type>
+		<!-- name-->
+		<name>bksx</name>
+		<!-- uid-->
+		<uid>test</uid>
+		<!-- qxbm-->
+		<qxbm>test</qxbm>
+		<!-- pid-->
+		<pid>test</pid>
+		<!-- 发送数据量 -->
+		<mcfssjl>1000</mcfssjl>
+		<!-- 异常处理次数 -->
+		<ycclcs>3</ycclcs>
+		<!-- 发送数据日期 -->
+		<fssjrq>01</fssjrq>
+		<!-- 发送数据时间 -->
+		<fssjsj>01</fssjsj>
+		<!-- 就业认定申请日期 -->
+		<jyrdsqrq>10</jyrdsqrq>
+		<!-- 就业认定申请时间 -->
+		<jyrdsqsj>00</jyrdsqsj>
+		<!--每日发送数据时间  -->
+		<mrfssjsj>22</mrfssjsj>
+	</fzjy-app-config>
+	
+	<!-- 社保互动接口 -->
+	<sb-app-config type="com.sx.ldlsc.ywhd.sbyb.sb.SbAppConfig">
+		<!-- sid -->
+		<sid>10.01.01.01</sid>
+		<!-- md -->
+		<md>YhzcGetZhxx</md>
+		<!-- url-->
+		<url>http://172.24.15.229:8080/SwitchPlatform/services/webservice</url>
+		<!-- type-->
+		<type>sb</type>
+		<!-- name-->
+		<name>bksx</name>
+		<!-- uid-->
+		<uid>test</uid>
+		<!-- qxbm-->
+		<qxbm>test</qxbm>
+		<!-- pid-->
+		<pid>test</pid>
+	</sb-app-config>
+	
+	<!-- 医保互动接口 -->
+	<yb-app-config type="com.sx.ldlsc.ywhd.sbyb.yb.YbAppConfig">
+		<!-- sid -->
+		<sid>12.03.15.01</sid>
+		<!-- md -->
+		<md>GetVirPsnFeeInfo</md>
+		<!-- url-->
+		<url>http://172.24.15.229:8080/SwitchPlatform/services/webservice</url>
+		<!-- type-->
+		<type>yb</type>
+		<!-- name-->
+		<name>bksx</name>
+		<!-- uid-->
+		<uid>test</uid>
+		<!-- qxbm-->
+		<qxbm>test</qxbm>
+		<!-- pid-->
+		<pid>test</pid>
+	</yb-app-config>
+	<!-- 农村岗补社补-->
+	<ncgbsb-app-config type="com.sx.ldlsc.ncgbsb.conf.NcgbsbAppConfig">
+	   <!--社保医保互动条数 -->
+	  <sbybhdts>40</sbybhdts>
+	  <sshsbybhdsj>22</sshsbybhdsj>
+	</ncgbsb-app-config>
+	
+	<!-- <zzbys-app-config type="com.sx.ldlsc.zzbysgl.conf.ZzbysglAppConfig">
+    数据交换接收休息时间 秒
+        <sjjhsj>300</sjjhsj> 
+    数据交换 发送 classid
+        <classid_js>0014</classid_js> 
+    数据交换 url_js 接收
+    	<url_js>http://130.10.7.13:6666/sjjh/services/DXWebService?wsdl</url_js>
+    就业率统计执行时间 天
+    	<jyltjsj_d>01</jyltjsj_d>
+    就业率统计执行时间 小时
+    	<jyltjsj_h>00</jyltjsj_h>
+	</zzbys-app-config> -->
+	
+	<!-- 高校毕业生数据交换-->
+	<!-- <gxbys-app-config type="com.sx.ldlsc.gxbysgl.conf.GxbysglAppConfig">
+    数据交换接收休息时间 秒
+        <sjjhsj>300</sjjhsj> 
+    数据交换 发送 classid
+        <classid_js>0015</classid_js> 
+    数据交换 url_js 接收
+    	<url_js>http://130.10.7.13:80/sjjh/services/DXWebService?wsdl</url_js>
+        <key>as34ghjklzxcvbn1</key>
+        <iv>1234ghjklzxcvbn1</iv>
+        润乾服务地址
+        <runqianServerUrl>http://130.10.7.174:8000/runqianServer</runqianServerUrl>
+	</gxbys-app-config> -->
+	
+	<!-- 单位招用岗补社补 -->
+    <dwzygbsb-app-config type="com.sx.ldlsc.dwzygbsb.conf.DwzygbsbAppConfig">
+    <!--  -->
+    <sbxhd_r>04</sbxhd_r>
+    <sbxhd_h>14</sbxhd_h>
+    
+    <!-- 内网数据交换图片url -->
+    <url_hqtp_nwSjjh>http://130.10.7.158:8090/sjjh_nw/sysfiles/dwzygbsb/tpsc/</url_hqtp_nwSjjh>
+    
+    <!-- 信息咨询子系统-内网发送短信自动服务开始时间 -->
+    <xxzxzxt_ZdfwKssj>08</xxzxzxt_ZdfwKssj>
+    <!-- 信息咨询子系统-内网发送短信自动服务结束时间 -->
+    <xxzxzxt_ZdfwJssj>17</xxzxzxt_ZdfwJssj>
+    <!-- 信息咨询子系统-短信子号码 -->
+    <dxzhm>111111</dxzhm>
+    
+    <zdfwjgsjm>300</zdfwjgsjm>
+    <!-- 数据交换接收休息时间 秒-->
+        <sjjhsj>300</sjjhsj> 
+    <!-- 数据交换 发送 classid-->
+        <classid_js>0023</classid_js> 
+    <!-- 数据交换 url_js 接收-->
+        <url_js>http://130.10.7.13:80/sjjh/services/DXWebService?wsdl</url_js>
+    <!-- 数据交换开始时间 HHmmss-->
+        <sjjhkssj></sjjhkssj> 
+    <!-- 数据交换 结束时间 HHmmss-->
+        <sjjhjssj></sjjhjssj> 
+    <!-- 市材料接收互动开始时间-->
+         <sclhdkssj>210000</sclhdkssj>
+    <!-- 市材料接收互动结束时间-->
+         <sclhdjssj>235959</sclhdjssj>
+    <!-- 静态报表生成时间-->
+   		 <bbtjrq>01</bbtjrq>
+    </dwzygbsb-app-config>
+    
+    	<!-- 小微企业高校毕业生社补 -->
+    <xwqygxbys-app-config type="com.sx.ldlsc.xwqygxbys.conf.XwqygxbysAppConfig">
+    <!-- 数据交换接收休息时间 秒-->
+        <sjjhsj>300</sjjhsj> 
+    <!-- 数据交换 发送 classid-->
+        <classid_js>0025</classid_js> 
+    <!-- 数据交换 url_js 接收-->
+        <url_js>http://172.24.15.253/bjldlscdx/services/DXWebService?wsdl</url_js>
+    <!-- 数据交换开始时间 HHmmss-->
+        <sjjhkssj>220000</sjjhkssj> 
+    <!-- 数据交换 结束时间 HHmmss-->
+        <sjjhjssj>230000</sjjhjssj> 
+    <!-- 市材料接收互动开始时间-->
+         <sclhdkssj>220000</sclhdkssj>
+    <!-- 市材料接收互动结束时间-->
+         <sclhdjssj>230000</sclhdjssj>
+    </xwqygxbys-app-config>
+    <!-- 小微企业高校毕业生社补 结束-->
+	
+	<!-- 家政企业优惠政策-->
+	<jzqyyhzc-app-config type="com.sx.ldlsc.jzqyyhzc.conf.JzqyyhzcAppConfig">
+		<!-- 最长补贴年限 -->
+		<zcbtnx>5</zcbtnx>
+		<!-- 男退休年龄-->
+		<nantxnl>60</nantxnl>
+		<!-- 女退休年龄 -->
+		<nvtxnl>50</nvtxnl>	
+	</jzqyyhzc-app-config>
+	<!-- 员工制家政企业认定-->
+	<ygzjzqyrd-app-config type="com.sx.ldlsc.ygzjzqyrd.conf.YgzjzqyrdAppConfig">
+	 <!-- 企业资格认定-现有家政服务员 -->	
+		<xyjzfwy>100</xyjzfwy>
+	 <!-- 企业资格认定-现有家政服务员试点 -->	
+		<sdxyjzfwy>200</sdxyjzfwy>
+     <!-- 企业资格认定-实缴金额 -->	
+		<sjje>50</sjje>
+	 <!-- 男退休年龄-->
+		<nantxnl>60</nantxnl>
+	 <!-- 女退休年龄 -->
+		<nvtxnl>50</nvtxnl>		
+	 <!-- 人员自动离职时间 -->
+		<rylzsj>00</rylzsj>	
+	 <!-- 续签放行截止日期(即不需要资格证书) -->
+		<xqfxrq>20991231</xqfxrq>	
+	<!-- 插入人员培训信息表自动服务时间间隔设置 -->
+		<!-- 单位为：分钟-->
+		<zdfwryxxb>120</zdfwryxxb>
+	<!-- 人员新签 1为开启资格证书校验 0为关闭资格证书校验  -->
+		<!--试点 1为开启 0为关闭-->
+		<sd>0</sd>
+		<!--试点开始时间 yyyyMMdd-->
+		<sdkssj>20000101</sdkssj>
+		<!--试点结束时间 yyyyMMdd-->
+		<sdjssj>20991231</sdjssj>
+		<!--非试点 1为开启 0为关闭-->
+		<fsd>1</fsd>
+		<!--非试点开始时间 yyyyMMdd-->
+		<fsdkssj>20000101</fsdkssj>
+		<!--非试点结束时间 yyyyMMdd-->
+		<fsdjssj>20991231</fsdjssj>
+	</ygzjzqyrd-app-config>	
+	<!-- 人力资源服务许可 -->
+	  <!-- <rlzyfwxk-app-config type="com.sx.ldlsc.rlzyfwxk.conf.RlzyfwxkAppConfig">
+    	数据交换接收休息时间 秒
+
+
+
+        <sjjhsj>3</sjjhsj> 
+   	 	数据交换 发送 classid
+        <classid_js>0028</classid_js> 
+    	数据交换 url_js 接收
+    	<url_js>http://130.10.7.143:8080/sjjh_nw/services/DXWebService?wsdl</url_js>
+    	读文件路径
+
+
+
+    	<url_qwj>http://130.10.7.143:8080/sjjh_nw/sysfiles/rlzyfwxk/</url_qwj>
+    	文件读取休眠
+    	<wjdq_sleep>300</wjdq_sleep>
+	</rlzyfwxk-app-config>   -->
+	<!--  剩余处理天数 --> 
+	<!-- <rlzyfwxk-app-config type="com.sx.ldlsc.rlzyfwxk.conf.RlzyfwxkAppConfig">
+    数据交换接收休息时间 秒
+        <sjjhsj>300</sjjhsj> 
+    数据交换 发送 classid
+        <classid_js>0016</classid_js> 
+    数据交换 url_js 接收
+    	<url_js>http://130.10.7.15/sjjh/services/DXWebService?wsdl</url_js>
+    	 读文件路径
+    	<url_qwj>http://130.10.7.15:6060/sjjh/sysfiles/rlzyfwxk/</url_qwj>
+    	备案业务办理天数
+    	<rlzyfwxk_bablts>20</rlzyfwxk_bablts>
+    	<rlzyfwxk_bgblts>20</rlzyfwxk_bgblts>
+    	<rlzyfwxk_xkblts>20</rlzyfwxk_xkblts>
+	</rlzyfwxk-app-config> -->
+     <!--  剩余处理天数  -->
+	
+	<!-- 劳动力市场业务监管平台 -->
+    <ldlscywjgpt-app-config type="com.sx.ldlsc.ywjgpt.conf.LdlscYwjgptAppConfig">
+        <!-- 自动服务开始时间 -->
+        <zdfwkssj>000000</zdfwkssj>
+        <!-- 自动服务结束时间 -->
+        <zdfwjssj>035959</zdfwjssj>
+        <!-- 高峰自动服务间隔时间 -->
+        <zdgfjgsj>15</zdgfjgsj>
+        <!-- 高峰自动服务开始时间 -->
+        <zdfwgfkssj>090000</zdfwgfkssj>
+        <!-- 高峰自动服务结束时间 -->
+        <zdfwgfjssj>180000</zdfwgfjssj>
+        <!-- 统计周期起日期 -->
+        <tjzqqrq>25</tjzqqrq>
+        <!-- 统计周期止日起 -->
+        <tjzqzrq>24</tjzqzrq>
+        <!-- 业务高峰期维护表开始时间点(单位：天) -->
+        <zdfwywgfqsjd>60</zdfwywgfqsjd>
+        <!-- 重复推荐成功数周期-->
+        <cftjcgszq>90</cftjcgszq>
+        <!-- 分页 -->
+        <fyys>50</fyys>
+        <!-- 补贴金额标准-->
+        <btjebz>20</btjebz>
+        <!-- 深度放行统计开始年份-->
+        <sdfxtjksnf>2007</sdfxtjksnf>
+        <!-- 在线人数自动刷新时间 (秒)-->
+        <zxrszdsxsj>300</zxrszdsxsj>
+    </ldlscywjgpt-app-config>
+	<!-- 结束-->
+	<!-- 大学生村官  begin-->
+	<dxscg-app-config type="com.sx.ldlsc.dxscg.conf.DxscgAppConfig">
+		<!-- 大学生数据上传路径 -->
+		<dxssjsclj>dxscg</dxssjsclj>
+		 <dxsggsclj>gg</dxsggsclj>
+		 <!--大学生业务办理开始,结束时间 -->
+		 <ywbljssj>0930</ywbljssj>
+		 <ywblkssj>0601</ywblkssj>
+		 <!--统计分析行政区划  -->
+		 <tjfxxzqh>110105000000,110108000000,110106000000,110109000000,110111000000,110112000000,110113000000,110114000000,110115000000,110117000000,110116000000,110228000000,110229000000</tjfxxzqh>
+	</dxscg-app-config>
+
+	<!-- 结束-->
+	<!-- 大学生村官  end -->
+		<!--优惠政策_困难企业平台社保医保互动接口 begin   -->
+	<knqyybsb-jhpt-config type="com.sx.ldlsc.yhzc.knqybt.sbyb.KnqyYbSbAppConfig" ywhdjhpturl="http://192.168.60.60/SwitchPlatform/services/webservice">
+		<knqyybtj-jhpt  type="yb" sid="22.02.15.01"  md="getSZQYFeeInfo" name="bksx" uid="test" qxbm="test" pid="test" ></knqyybtj-jhpt>
+		<knqyybjg-jhpt  type="yb" sid="22.02.15.01"  md="retSZQYFeeInfo" name="bksx" uid="test" qxbm="test" pid="test" ></knqyybjg-jhpt>
+        <knqysbtj-jhpt  type="sb" sid="22.01.03.01"  md="getCxtj" name="bksx" uid="test" qxbm="test" pid="test" ></knqysbtj-jhpt>
+        <knqysbjg-jhpt  type="sb" sid="22.01.03.01"  md="getJfjl" name="bksx" uid="test" qxbm="test" pid="test" ></knqysbjg-jhpt>
+	</knqyybsb-jhpt-config>
+		<!--优惠政策_困难企业平台社保医保互动接口 end   -->
+		
+	
+	<!-- 职介绩效考核 -->
+    <zjjxkh-app-config type="com.sx.ldlsc.zjjxkh.conf.ZjjxkhAppConfig">
+		<roleid>0000005000</roleid>
+		<rbac_typeid>00</rbac_typeid>
+    </zjjxkh-app-config>
+    
+    <!--社会公益性 begin-->
+	<!-- <shgyx-app-config type="com.sx.ldlsc.shgyx.conf.ShgyxAppConfig">
+		社会公益性_医保社保后台自动运行日期和时间 格式：ddHH
+		<ybsbhtzdyxrq>0500</ybsbhtzdyxrq>
+		社会公益性_医保社保批次执行条数，现在暂为每100人执行一次 
+		<ybsbpczxts>100</ybsbpczxts>
+		用款计划数据导出文件存放文件夹
+		<ykjhsjdc>ykjhdc</ykjhsjdc>
+		密钥管理
+		<ende-key>
+			<endekey xzqh='110105000000'>110105000000</endekey>
+		</ende-key>
+		不含街道的行政区划代码
+		<xzqhdm>110101000000,110102000000,110107000000</xzqhdm>
+			离线复核下载打包目录
+		社会公益性人员管理离线复核下载打包目录
+		<fhdbxzml1>shgyx</fhdbxzml1>
+		<fhdbxzml2>sfh</fhdbxzml2>
+		社会公益性人员管理复核打包开始时间
+		<scfhwjsj>21</scfhwjsj>
+		服务器web端口号,根据服务器开放端口号不同进行更改
+		<bdfwdkh>8080</bdfwdkh>
+	</shgyx-app-config>	 -->
+	<!--社会公益性 end-->	
+	
+	<!--大学生村官报名 -->
+	<dxscgbm-app-config type="com.sx.ldlsc.dxscgbm.conf.DxscgbmAppConfig">
+		<!-- 短信发送追加内容 -->
+		<send-msg-append-content>（参加请回复@PY，否则回复@PN）</send-msg-append-content>
+		<!-- 显示的追加内容 -->
+		<display-append-content>（参加请回复111111MY，否则回复111111MN）</display-append-content>
+		<!-- 子号码 -->
+		<child-number>111111</child-number>
+	</dxscgbm-app-config>
+	
+	 <!-- 企业稳岗补贴 -->
+	 <qywgbt-app-config type="com.sx.ldlsc.qywgbt.conf.QywgbtAppConfig">
+	 <tpsjjhsj>90</tpsjjhsj>
+    <!-- 数据交换接收休息时间 秒-->
+        <sjjhsj>300</sjjhsj> 
+    <!-- 数据交换 发送 classid-->
+        <classid_js>0030</classid_js> 
+    <!-- 数据交换 url_js 接收-->
+    <!-- 
+    	<url_js>http://130.10.7.148:6060/sjjh/services/DXWebService?wsdl</url_js>
+   	-->
+   	<url_js>http://130.10.7.41:8080/sjjh/services/DXWebService?wsdl</url_js>
+	</qywgbt-app-config>
+	<!-- 企业稳岗补贴  结束 -->
+	<!-- 申报系统 -->
+	<!-- <sbxt-app-config type="com.sx.ldlsc.sbxt.conf.SbxtAppConfig">
+		 数据交换接收休息时间 秒
+        <sjjhsj>300</sjjhsj> 
+		数据交换 发送 classid
+        <classid_js>0030</classid_js> 
+		数据交换 url_js 接收
+    	<url_js>http://130.10.7.90:8080/sjjh/services/DXWebService?wsdl</url_js>
+    	<key>bys@2013_dzzjyc#</key>
+        <iv>bjrbj.gov.cn@bys</iv>
+        <url_qwj>http://130.10.7.90:8080/sjjh/sysfiles/sbxt/</url_qwj>
+        图片交换时间
+        <tpsjjhsj>600</tpsjjhsj>
+	</sbxt-app-config> -->
+	<!-- 申报系统  end-->
+	
+	<!-- 单位补贴系统-->
+	<dwbtzc-app-config type="com.sx.ldlsc.qxbdh.sydwbtzc.conf.DwbtzcAppConfig">
+		<!-- 接收密钥 -->
+		<jskey>1210158965</jskey>
+		<!-- 受理密钥 -->
+		<slkey>1453973358</slkey>
+		<!-- 批复密钥 -->
+		<pfkey>2226723469</pfkey>
+		<!-- 累计申请时长比较月份 -->
+		<ljsqscbjyf>36</ljsqscbjyf>
+		<!-- 是否开启验证 -->
+		<sfkqyz>1</sfkqyz>
+		<pagecounts>24</pagecounts>
+	</dwbtzc-app-config>
+	
+	<!-- 五证合一  名称 20170911 fwc -->
+	<ldlscmc-app-config type="com.sx.ldlsc.conf.LdlscmcAppConfig">
+		<tyshxydm>统一社会信用代码（组织机构代码）</tyshxydm>
+		<tyshxydm_zzjgdm>统一社会信用代码&lt;br&gt;（组织机构代码）</tyshxydm_zzjgdm>
+		<sbdjh>社保登记号</sbdjh>
+	</ldlscmc-app-config>
+	
+	<!--技能提升补贴-->
+	<!-- <jntsbt-app-config type="com.sx.ldlsc.yhzc.jntsbt.conf.JntsbtAppConfig">
+		公示维护开始时间
+		<jntsbtgswhsj>10</jntsbtgswhsj>
+		
+		<jntsbtsbbdsj></jntsbtsbbdsj>
+		证书校验URL地址
+		<zsjy_nwUrl>http://test.sowin.com/ws/QUERYWebService</zsjy_nwUrl>
+		证书校验调用方法名
+		<zsjy_nwMethod>QUERYInfo</zsjy_nwMethod>
+		证书校验间隔时间（秒）
+		<zsjy_nwJgsj></zsjy_nwJgsj>
+	</jntsbt-app-config> -->
+	
+	
+		<!-- 公共服务平台手机号绑定-->
+	<ggfwptsjhbd-app-config type="com.sx.ldlsc.ggfwptsjhbd.conf.SjhbdAppConfig">
+		<sjhbdFsyzm_url>http://10.90.1.91/gfyhservice/webservice/cxsjjh</sjhbdFsyzm_url>
+		<sjhbd_url>http://10.90.1.91/gfyhservice/webservice/mobilebind</sjhbd_url>
+	</ggfwptsjhbd-app-config>
+	<!--  公共服务岗补 -->
+	<ggfwgb-app-config type="com.sx.ldlsc.ggfwgb.conf.GgfwgbAppConfig">
+		<!--  社保比对开始日期 -->
+		<sbbdksrq>1</sbbdksrq>
+		<!--  社保比对开始日期 -->
+		<sbbdjsrq>20</sbbdjsrq>
+		<!--  社保比对运行时间 -->
+		<sbbdyxsj>17</sbbdyxsj>
+	</ggfwgb-app-config>
+	
+	<!-- 高校毕业生就业创业服务 -->
+	<!-- <gxbysjycy-app-config type="com.sx.ldlsc.gxbysjycy.smzdj.conf.GxbysjycyAppConfig">
+		<gxbysjycy_dxjkzhm>111111</gxbysjycy_dxjkzhm>
+	</gxbysjycy-app-config> -->
+
+	<!-- 毕业生空中招聘平台数据交换 -->
+	<byskzzppt-app-config type="com.sx.ldlsc.gxbysjycy.byskzzppt.conf.ByskzzpptAppConfig">
+		<!-- 数据交换接收休息时间 秒 -->
+		<sjjhsj>300</sjjhsj>
+		<!-- 数据交换 发送 classid -->
+		<classid_js>0058</classid_js>
+		<!-- 数据交换 url_js 接收 -->
+		<url_js>http://172.24.15.253/bjldlscdx/services/DXWebService?wsdl</url_js>
+		<!-- 高校见习平台外网_岗位录入链接 -->
+		<zph_sjcj_url>http://www.bjrbj.gov.cn/bys/jxjdpt/gwxxwh.html</zph_sjcj_url>
+		<kzzppt_mm>1qaz2wsx</kzzppt_mm>
+		<kzzppt_salt>aaaaaaaaaaaaaa3a</kzzppt_salt>
+		<!-- 单位申请链接 -->
+		<bmdsq_url>http://130.10.7.158:8081/bys/jxjdpt/zppt/bmdsq.html</bmdsq_url>
+		<!-- 市级白名单申请密码 -->
+		<sjsqmdmm>1qaz2wsx</sjsqmdmm>
+	</byskzzppt-app-config>
+	
+	<!-- 见习基地数据交换 -->
+	<jxjdpt-app-config type="com.sx.ldlsc.jxjdpt.conf.JxjdptAppConfig">
+		<!-- 数据交换接收休息时间 秒 -->
+		<sjjhsj>30</sjjhsj>
+		<!-- 图片交换休息时间 秒 -->
+		<tpsjjhsj>600</tpsjjhsj>
+		<!-- 数据交换 发送 classid -->
+		<classid_js>0058</classid_js>
+		<!-- 数据交换 url_js 接收 -->
+		<url_js>http://172.24.15.253/bjldlscdx/services/DXWebService?wsdl
+		</url_js>
+		<url_qwj>http://172.24.15.253/bjldlscdx/sysfiles/jxjdpt/</url_qwj>
+		<!-- 高校见习平台外网_岗位录入链接 -->
+		<zph_sjcj_url>http://www.bjrbj.gov.cn/bys/jxjdpt/gwxxwh.html
+		</zph_sjcj_url>
+		<!-- 短信发送smscord参数 -->
+		<ww_smscord>1</ww_smscord>
+		<!-- 见习人员类型审核休眠时间 -->
+		<jxrylxshsj>60</jxrylxshsj>
+		<!-- 见习人员短信发送时间 -->
+		<jxrydxfssj>09</jxrydxfssj>
+		<!-- 见习人员短信发送结束时间 -->
+		<jxrydxfssjjs>20</jxrydxfssjjs>
+		<!-- 短信接口子号码 -->
+		<dxjkzhm>111111</dxjkzhm>
+		<!-- 每月对比社保记录 -->
+		<jxrysbbdr>29</jxrysbbdr>
+		<jxrysbbdsj>17</jxrysbbdsj>
+		<kzzppt_mm>1c63129ae9db9c60c3e8aa94d3e00495</kzzppt_mm>
+		<kzzppt_salt>aaaaaaaaaaaaaa3a</kzzppt_salt>
+	</jxjdpt-app-config>
+	
+	
+	<ycxgb-app-config type="com.sx.ldlsc.ycxgb.conf.YcxgbAppConfig">
+		<cbztcxkssj>03</cbztcxkssj>
+		<cbztcxjssj>04</cbztcxjssj>
+	</ycxgb-app-config>
+	
+	<!-- 临时工工龄认定的配置信息 -->
+	<lsgglrd-app-config type="com.sx.ldlsc.syry.conf.LsgglrdAppConfig">
+		
+		<!-- 短信提醒业务处理时间点 -->
+		<jbrYwcl_sjd>0</jbrYwcl_sjd>
+		
+		<!-- 短信发送服务时间间隔(s) -->
+		<dxfs_mm>300</dxfs_mm>
+		<!-- 短信发送分页 -->
+		<dxfs_pagesize>50</dxfs_pagesize>
+		<!-- 短信发送开始时间 （格式为：H）-->
+		<dxfs_kssj>9</dxfs_kssj>
+		<!-- 短信发送结束时间  （格式为：H） -->
+		<dxfs_jssj>18</dxfs_jssj>
+		<lsgglrd_dxjkzhm>111111</lsgglrd_dxjkzhm>
+		
+		<!-- 线上申请进度接口参数type -->
+		<lsgglrd_typecs>bbsq002</lsgglrd_typecs>
+		<!-- 线上申请进度接口 -->
+		<lsgsglrd_xsshjdjk>http://172.24.15.253:8888/diplatform/jsygl/accept</lsgsglrd_xsshjdjk>
+		<!-- <lsgsglrd_xsshjdjk>http://130.10.7.155:8090/diplatform/jsygl/accept</lsgsglrd_xsshjdjk> -->
+		<!-- 档案影像调用查看 -->
+		<archiveImageURL>http://172.24.15.213/digitalarchive/LoginAction.do?method=pfPkiSso</archiveImageURL>
+	</lsgglrd-app-config>
+</sx-config>

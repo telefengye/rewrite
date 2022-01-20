@@ -1,0 +1,20 @@
+2021-07-09 09:14:21 WebappLoader[/examples]: Deploying class repositories to work directory E:\tomcat\Tomcat_4.x\work\Standalone\localhost\examples
+2021-07-09 09:14:21 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to E:\tomcat\Tomcat_4.x\webapps\examples\WEB-INF\classes
+2021-07-09 09:14:21 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2021-07-09 09:14:21 ContextConfig[/examples]: Configured an authenticator for method FORM
+2021-07-09 09:14:21 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2021-07-09 09:14:21 StandardManager[/examples]: Seeding of random number generator has been completed
+2021-07-09 09:14:21 ContextListener: contextInitialized()
+2021-07-09 09:14:21 SessionListener: contextInitialized()
+2021-07-09 09:14:22 StandardWrapper[/examples:default]: Loading container servlet default
+2021-07-09 09:14:22 StandardWrapper[/examples:invoker]: Loading container servlet invoker
+2021-07-09 16:41:50 WebappLoader[/examples]: Deploying class repositories to work directory E:\tomcat\Tomcat_4.x\work\Standalone\localhost\examples
+2021-07-09 16:41:50 WebappLoader[/examples]: Deploy class files /WEB-INF/classes to E:\tomcat\Tomcat_4.x\webapps\examples\WEB-INF\classes
+2021-07-09 16:41:50 WebappLoader[/examples]: Reloading checks are enabled for this Context
+2021-07-09 16:41:50 ContextConfig[/examples]: Configured an authenticator for method FORM
+2021-07-09 16:41:50 StandardManager[/examples]: Seeding random number generator class java.security.SecureRandom
+2021-07-09 16:41:50 StandardManager[/examples]: Seeding of random number generator has been completed
+2021-07-09 16:41:50 ContextListener: contextInitialized()
+2021-07-09 16:41:50 SessionListener: contextInitialized()
+2021-07-09 16:41:50 StandardWrapper[/examples:default]: Loading container servlet default
+2021-07-09 16:41:50 StandardWrapper[/examples:invoker]: Loading container servlet invoker

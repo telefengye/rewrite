@@ -1,0 +1,16 @@
+  <PUBLIC:COMPONENT id="bhvMaxlength"   urn="maf:Maxlength">   
+	  <PUBLIC:PROPERTY  name="maxLength"   /> 
+	  <PUBLIC:ATTACH    event="onkeyup"   handler="myTextAreaLengthOk"   /> 
+	  <PUBLIC:ATTACH    event="onpaste"   handler="myTextAreaLengthOk"   /> 
+	  <PUBLIC:ATTACH    event="onblur"    handler="myTextAreaLengthOk"   /> 
+	  
+	  <SCRIPT   language="JScript">  
+		  function  myTextAreaLengthOk(){
+			if(value.length > maxLength){
+			    alert("只允许输入 "+maxLength+" 个字符，目前长度已达到 "+value.length+" 个字符，超长部分将被丢弃！");
+			    value = value.substr(0,maxLength);
+			}
+		  }
+	  </SCRIPT>     
+  </PUBLIC:COMPONENT>   
+  

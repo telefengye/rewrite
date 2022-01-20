@@ -1,0 +1,15 @@
+/*单元格的鼠标效果---罗浩*/
+<public:attach event="onmouseover" onevent="lhlist()" />
+<script language="javascript">
+function lhlist(){
+this.bgColor="#FFFFFF";
+}
+</script>
+
+
+<public:attach event="onmouseout" onevent="lhlistnormal()" />
+<script language="javascript">
+function lhlistnormal(){
+this.bgColor="#84BAE7";
+}
+</script>

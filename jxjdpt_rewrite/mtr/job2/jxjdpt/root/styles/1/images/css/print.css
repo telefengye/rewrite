@@ -1,0 +1,70 @@
+/*
+#################################################################################################
+#  名    称：应用开发中心CSS范例
+#  版本：1.1
+#  版本日期：2006-7-20
+#  作    者：罗浩
+#  版权所有:北京北控三兴信息技术有限公司
+#  说    明:本文件由美工人员进行修改，本文件适用范围遵照《美工组开发规范》。
+			修改时根据实际风格要求，修改现有样式；不允许弃用一个现有样式的同时新增同类功能的样式；
+			添加新样式时，类名以功能的全称或简称命名。
+#################################################################################################
+*/
+
+
+/*打印页全局页面样式，白色背景无背景图*/
+body {
+	background-color:#FFFFFF;
+	background-image:none;
+}
+
+
+/*打印页全局表格样式，对所有表格起作用，预设了强制换行功能，预设了细边框功能*/
+table,tr,td {
+	/*此处文字设置为打印页上主表以外的最通用的字体*/
+	font-size:10pt;
+	font-family:"宋体"; 
+	color:#000000;
+	word-break:break-all;
+	word-wrap:break-word;
+	border-collapse:collapse;
+} 
+
+
+/*打印页主表格样式*/
+.table {
+	border:1px solid #000000;
+	background-color:#FFFFFF;
+	padding:1 2 1 2;
+	text-align:center;
+}
+/*主表格单元格样式，自动生效*/
+.table tr {height:25px;} 
+.table td {
+	font-size:11pt;/*最普遍的主表字体*/
+	font-family:"宋体"; 
+	border:1px solid #000000;
+} 
+
+
+/*带下划线的文字样式*/
+.underlineprint {
+	font:normal 10pt "宋体";
+	text-decoration:underline;
+}
+
+
+/*字体样式，其他情况自行添加*/
+.pt9i,.pt9i td{font:normal 9pt "宋体" !important;} 
+.pt9,.pt9 td{font:normal 9pt "宋体";} 
+.pt10,.pt10 td{font:normal 10pt "宋体";} 
+.pt10b,.pt10b td{font:bold 10pt "宋体";} 
+.pt10h,.pt10h td{font:normal 10pt "黑体";}
+.pt11,.pt11 td{font:normal 11pt "宋体";}  
+.pt12,.pt12 td{font:normal 12pt "宋体";} 
+.pt14,.pt14 td{font:normal 14pt "宋体";} 
+.pt15,.pt15 td{font:normal 15pt "宋体";} 
+.pt15b,.pt15b td{font:bold 15pt "宋体";} 
+.pt18,.pt18 td{font:normal 18pt "宋体";}
+.pt18b,.pt18b td{font:bold 18pt "宋体";}
+.pt18h,.pt18h td{font:normal 18pt "黑体";}

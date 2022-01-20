@@ -1,0 +1,178 @@
+package com.sx.ldlsc.zypx.valuebean.ggfwlgwpx;
+
+import com.sx.bean.AbsValueBean;
+
+/**
+ * <pre>
+ * 项目名称：bjldlsc    
+ * 类 名 称：PxjgVB   
+ * 类 描 述：机构表(px_ggfwlgwpx_pxjgb) PxjgVB  
+ * 创 建 人：   DJR
+ * 创建时间：2018年8月17日      
+ * 修 改 人：     
+ * 修改时间：2018年8月17日    
+ * 修改备注：       
+ * @version
+ * </pre>
+ */
+
+public class PxjgVB extends AbsValueBean {
+
+	private String pxjhid; // 培训计划id
+
+	private String pxjgmc; // 培训机构名称
+
+	private String pxjglxr; // 培训机构联系人
+
+	private String pxjgbgdh; // 培训机构办公电话
+
+	private String pxjgsj; // 培训机构手机
+
+	private String pxjgcz; // 培训机构传真
+
+	private String pxjgyx; // 培训机构邮箱
+
+	private String pxjgzcdz;// 培训机构注册地址
+	
+	private String pxjgczsj;// 培训机构操作时间
+
+	// 一个培训计划对应多个培训机构时
+	private String[] v_pxjgmcs; // 培训机构名称
+	private String[] v_pxjglxrs;// 培训机构联系人
+	private String[] v_pxjgbgdhs;// 培训机构办公电话
+	private String[] v_pxjgsjs;// 培训机构手机
+	private String[] v_pxjgczs;// 培训机构传真
+	private String[] v_pxjgyxs;// 培训机构邮箱
+	private String[] v_pxjgzcdzs;// 培训机构注册地址
+
+	public String getPxjhid() {
+		return pxjhid;
+	}
+
+	public void setPxjhid(String pxjhid) {
+		this.pxjhid = pxjhid;
+	}
+
+	public String getPxjgmc() {
+		return pxjgmc;
+	}
+
+	public void setPxjgmc(String pxjgmc) {
+		this.pxjgmc = pxjgmc;
+	}
+
+	public String getPxjglxr() {
+		return pxjglxr;
+	}
+
+	public void setPxjglxr(String pxjglxr) {
+		this.pxjglxr = pxjglxr;
+	}
+
+	public String getPxjgbgdh() {
+		return pxjgbgdh;
+	}
+
+	public void setPxjgbgdh(String pxjgbgdh) {
+		this.pxjgbgdh = pxjgbgdh;
+	}
+
+	public String getPxjgsj() {
+		return pxjgsj;
+	}
+
+	public void setPxjgsj(String pxjgsj) {
+		this.pxjgsj = pxjgsj;
+	}
+
+	public String getPxjgcz() {
+		return pxjgcz;
+	}
+
+	public void setPxjgcz(String pxjgcz) {
+		this.pxjgcz = pxjgcz;
+	}
+
+	public String getPxjgyx() {
+		return pxjgyx;
+	}
+
+	public void setPxjgyx(String pxjgyx) {
+		this.pxjgyx = pxjgyx;
+	}
+
+	public String getPxjgzcdz() {
+		return pxjgzcdz;
+	}
+
+	public void setPxjgzcdz(String pxjgzcdz) {
+		this.pxjgzcdz = pxjgzcdz;
+	}
+
+	public String[] getV_pxjgmcs() {
+		return v_pxjgmcs;
+	}
+
+	public void setV_pxjgmcs(String[] v_pxjgmcs) {
+		this.v_pxjgmcs = v_pxjgmcs;
+	}
+
+	public String[] getV_pxjglxrs() {
+		return v_pxjglxrs;
+	}
+
+	public void setV_pxjglxrs(String[] v_pxjglxrs) {
+		this.v_pxjglxrs = v_pxjglxrs;
+	}
+
+	public String[] getV_pxjgbgdhs() {
+		return v_pxjgbgdhs;
+	}
+
+	public void setV_pxjgbgdhs(String[] v_pxjgbgdhs) {
+		this.v_pxjgbgdhs = v_pxjgbgdhs;
+	}
+
+	public String[] getV_pxjgsjs() {
+		return v_pxjgsjs;
+	}
+
+	public void setV_pxjgsjs(String[] v_pxjgsjs) {
+		this.v_pxjgsjs = v_pxjgsjs;
+	}
+
+	public String[] getV_pxjgczs() {
+		return v_pxjgczs;
+	}
+
+	public void setV_pxjgczs(String[] v_pxjgczs) {
+		this.v_pxjgczs = v_pxjgczs;
+	}
+
+	public String[] getV_pxjgyxs() {
+		return v_pxjgyxs;
+	}
+
+	public void setV_pxjgyxs(String[] v_pxjgyxs) {
+		this.v_pxjgyxs = v_pxjgyxs;
+	}
+
+	public String[] getV_pxjgzcdzs() {
+		return v_pxjgzcdzs;
+	}
+
+	public void setV_pxjgzcdzs(String[] v_pxjgzcdzs) {
+		this.v_pxjgzcdzs = v_pxjgzcdzs;
+	}
+
+	public String getPxjgczsj() {
+		return pxjgczsj;
+	}
+
+	public void setPxjgczsj(String pxjgczsj) {
+		this.pxjgczsj = pxjgczsj;
+	}
+
+	
+}
+

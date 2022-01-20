@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;struts2/root/WEB-INF/lib/readme.txt&apos;" deleteContents="false" description="Delete resource &apos;struts2/root/WEB-INF/lib/readme.txt&apos;" element1="/struts2/root/WEB-INF/lib/readme.txt" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1623837761430"/>
+</session>

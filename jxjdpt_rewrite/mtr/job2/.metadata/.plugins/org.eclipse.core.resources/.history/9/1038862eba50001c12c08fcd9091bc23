@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+
+	<form-beans>
+
+
+		<form-bean name="LoginFormBean" type="com.sx.login.form.LoginFormBean" />
+		<form-bean name="UserFormBean" type="com.sx.user.form.UserFormBean" />
+
+	</form-beans>
+
+	<action-mappings>
+		<!-- 登录页面和方法 -->
+		<action path="/login"
+				type="com.sx.login.action.LoginAction"
+				parameter="method"
+				name="LoginFormBean"
+				scope="request">
+			<forward name="index" path="/index.jsp" />
+			<forward name="error" path="/error.jsp" />
+			<forward name="login" path="/login.jsp" />
+		</action>
+		
+		
+		<action path="/user"
+				type="com.sx.user.action.UserAction"
+			    parameter="method"
+				name="UserFormBean"
+				scope="request">
+			<forward name="list" path="/resource/system/user/list.jsp" />
+			<forward name="add" path="/resource/system/user/add.jsp" />
+			<forward name="core" path="/resource/system/role/list.jsp" />
+			<forward name="addcore" path="/resource/system/role/add.jsp" />
+		</action>
+		
+		
+		<action path="/sbk"
+				type="com.sx.login.action.SocketAction"
+				parameter="method"
+				name="UserFormBean"
+				scope="request">
+			
+		</action>
+		
+	</action-mappings>
+	
+	
+	
+
+	<controller nocache="true" contentType="text/html; charset=GBK" />
+</struts-config>

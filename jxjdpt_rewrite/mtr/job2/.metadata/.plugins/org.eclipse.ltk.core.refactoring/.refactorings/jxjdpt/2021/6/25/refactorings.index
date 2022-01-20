@@ -1,0 +1,35 @@
+1623837404344	Delete element
+1623837438317	Delete element
+1623892475289	Delete element
+1623895175051	Extract local variable 'username'
+1623895183550	Extract local variable 'password'
+1623895623787	Copy file
+1623914512160	Delete element
+1623914531732	Copy compilation unit
+1623914542651	Rename type 'LoginAction'
+1623914547260	Copy compilation unit
+1623914556147	Rename type 'LoginDao'
+1623914559567	Copy compilation unit
+1623914569509	Rename type 'LoginFormBean'
+1623916239805	Extract local variable 'attribute'
+1623919426263	Delete element
+1623919471586	Delete element
+1623924438884	Extract local variable 'attribute'
+1623979429389	Extract local variable 'username'
+1623979431639	Extract local variable 'icard'
+1623979647741	Extract local variable 'querySql'
+1623979811751	Extract local variable 'data'
+1623985846498	Extract local variable 'attribute'
+1623995380664	Extract local variable 'username'
+1623995467220	Extract local variable 'ilevel'
+1623997593642	Extract local variable 'attribute'
+1623997616886	Extract local variable 'ilevel'
+1623997637303	Extract local variable 'ilevel2'
+1624003653864	Extract local variable 'icard2'
+1624003807932	Extract local variable 'icard'
+1624003832887	Extract local variable 'attribute'
+1624003860882	Extract local variable 'imark'
+1624004605998	Extract local variable 'dinputtime'
+1624005828797	Extract local variable 'dinputtime'
+1624007634063	Extract local variable 'sorder'
+1624009745643	Extract local variable 'icard'

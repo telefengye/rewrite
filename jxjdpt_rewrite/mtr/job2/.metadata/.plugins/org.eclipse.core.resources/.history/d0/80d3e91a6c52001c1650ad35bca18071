@@ -1,0 +1,5 @@
+package com.sx.ldlsc.zypx.common;
+
+public class DBFactory {
+
+}

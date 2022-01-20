@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+	<form-beans>
+		<!--见习岗位 -->
+		<form-bean name="jxgwgllrFB" type="com.sx.ldlsc.jxjdpt.formbean.jxgwgl.JxgwgllrFB" />
+		<!--统计  -->
+		<form-bean name="jxgzqkFB" type="com.sx.ldlsc.jxjdpt.formbean.tjfx.JxgzqkFB" />
+		<!--见习基地  -->
+		<form-bean name="jxjdglFB" type="com.sx.ldlsc.jxjdpt.formbean.jxjdgl.JxjdglFB" />
+		 <!-- 见习人员管理-->
+  		<form-bean name="jxjdpt_jxryglFB" type="com.sx.ldlsc.jxjdpt.formbean.jxrygl.JxryglFB"/>
+  		<!--招聘会管理  -->
+  		<form-bean name="jxjdpt_zphglFB" type="com.sx.ldlsc.jxjdpt.formbean.zphgl.ZphglFB"/>
+  		<!--参数维护  -->
+  		<form-bean name="qxxxwhFB" type="com.sx.ldlsc.jxjdpt.formbean.cswh.QxxxwhFB"/>
+  		<!--见习补贴审核 -->
+  		<form-bean name="jxbtsqFB" type="com.sx.ldlsc.jxjdpt.formbean.jxbtsh.JxbtsqFB"/>
+  		<!--见习补贴查询 -->
+  		<form-bean name="jxbtcxFB" type="com.sx.ldlsc.jxjdpt.formbean.jxbtsh.JxbtsqFB"/>
+  		<!--中专毕业生查询 -->
+  		<form-bean name="jxzzbysFB" type="com.sx.ldlsc.jxjdpt.formbean.zzbys.JxjdzzbysFB"/>
+  	</form-beans>
+  	
+	<action-mappings>
+	<!--见习岗位 -->
+		<action name="jxgwgllrFB" path="/jxjdpt/action/jxgwgl/JxgwglAction" type="org.springframework.web.struts.DelegatingActionProxy" parameter="method" scope="request" >
+ 			<forward name="jxgwgl_lrcx" path="/jxjdpt/jxgwgl/jxgwgl_lrcx.jsp" />
+ 			<forward name="jxgwgl_lr" path="/jxjdpt/jxgwgl/jxgwgl_lr.jsp" />
+ 			<forward name="jxgwgl_fb" path="/jxjdpt/jxgwgl/jxgwgl_fb.jsp" />
+ 			<forward name="jxgwgl_xx" path="/jxjdpt/jxgwgl/jxgwgl_xx.jsp" />
+ 			<forward name="glgwxxToExl" path="/jxjdpt/jxgwgl/jxgwgl_glgwxxtoexl.jsp" />
+ 			<forward name="gwxxToExl" path="/jxjdpt/jxgwgl/jxgwgl_gwxxtoexl.jsp" />
+ 			<forward name="jxgwgl_sjdgrs" path="/jxjdpt/cswh/cswh_sjdgrs.jsp" />
+ 			<forward name="jxgwgl_sjdgrsth" path="/jxjdpt/cswh/cswh_sjdgrsth.jsp" />
+ 			<forward name="jxgwgl_sh" path="/jxjdpt/jxgwgl/jxgwgl_sh.jsp" />
+ 		</action>
+		
+		
+	
+	<!--统计 -->
+		<action name="jxgzqkFB" path="/jxjdpt/action/tjfx/JxgzqkAction" type="org.springframework.web.struts.DelegatingActionProxy" parameter="method" scope="request" >
+ 			<forward name="jxgzqkb_sb" path="/jxjdpt/tjfx/jxgzqkb_sb.jsp" />
+ 			<forward name="jxgzqkb_hz" path="/jxjdpt/tjfx/jxgzqkb_hz.jsp" />
+ 			<forward name="jxdwjppryCx_bb" path="/jxjdpt/tjfx/jxdwjppryCx.jsp" />
+ 			<forward name="jxdwjppryCx_bb_dc" path="/jxjdpt/tjfx/jxdwjppryDc.jsp" />
+ 			<forward name="jxdwppryqkTj" path="/jxjdpt/tjfx/jxdwppryqkTj.jsp" />
+ 			<forward name="jxdwppryqkTjDc" path="/jxjdpt/tjfx/jxdwppryqkTjDc.jsp" />
+ 		</action>
+ 		<!--见习基地  -->
+		<action name="jxjdglFB" path="/jxjdpt/jxjdgl/JxjdglAction" type="org.springframework.web.struts.DelegatingActionProxy" parameter="method" scope="request" >
+ 			<forward name="jxjdgl_lrcx" path="/jxjdpt/jxjdgl/jxjdgl_lrcx.jsp" />
+ 			<forward name="jxjdglbc_lrcx" path="/jxjdpt/jxjdgl/JxjdglAction.do?method=jxjdCx" />
+ 			<forward name="jxjdgl_xg" path="/jxjdpt/jxjdgl/jxjdgl_xg.jsp" />
+ 			<forward name="jxjdgl_sh" path="/jxjdpt/jxjdgl/jxjdgl_sh.jsp" />
+ 			<forward name="jxjdgl_qxsh" path="/jxjdpt/jxjdgl/jxjdgl_qxsh.jsp" />
+ 			<forward name="jxjdgl_fb" path="/jxjdpt/jxjdgl/jxjdgl_fb.jsp" />
+ 			<forward name="dwlbxs" path="/common/tools/tyym/dwlbxs.jsp" />
+ 			<forward name="jxjdgl_xx" path="/jxjdpt/jxjdgl/jxjdgl_xx.jsp" />
+ 			<forward name="jxjdgl_xxtoexcel" path="/jxjdpt/jxjdgl/jxjdgl_xxtoexcel.jsp" />
+ 			<forward name="jxjdgl_ryxxlbCx" path="/jxjdpt/jxjdgl/jxjdgl_ryxxlb.jsp" />
+ 			
+ 			<forward name="jxjdgl_dc" path="/jxjdpt/jxjdgl/jxjdgl_jxdwfbDc.jsp" />
+ 			<forward name="jxjdgl_jxjdxgDc" path="/jxjdpt/jxjdgl/jxjdgl_jxjdxgDc.jsp" />
+ 		</action>
+ 		<!-- 见习人员管理 -->
+		<action name="jxjdpt_jxryglFB" path="/jxjdpt/action/jxrygl/jxryglAction" type="org.springframework.web.struts.DelegatingActionProxy" parameter="method" scope="request" >
+	  		<forward name="jxjdpt_jxrylr" path="/jxjdpt/jxrygl/jxrylr.jsp"></forward>
+	  		<forward name="jxjdpt_jxryxg" path="/jxjdpt/jxrygl/jxrygl_xg.jsp"></forward>
+	  		<forward name="jxjdpt_jxrygl" path="/jxjdpt/jxrygl/jxrygl.jsp"></forward>
+	  		<forward name="jxjdpt_jxryxx" path="/jxjdpt/jxrygl/jxryxx.jsp"></forward>
+	  		<forward name="jxryxxAction" path="/jxjdpt/action/jxrygl/jxryglAction.do?method=jxryxx"></forward>
+	  		<forward name="jxjdpt_jxrysh" path="/jxjdpt/jxrygl/jxrysh.jsp"></forward>
+	  		<forward name="jxjdpt_jxryfb" path="/jxjdpt/jxrygl/jxryfb.jsp"></forward>
+	  		<forward name="jxrywh" path="/jxjdpt/jxrygl/jxrywh.jsp"></forward>
+	  		<forward name="jxrygl_sbxxcx" path="/jxjdpt/jxrygl/jxrygl_sbxxcx.jsp"></forward>
+  		</action>
+  		<!-- 招聘会管理 -->
+		<action name="jxjdpt_zphglFB" path="/jxjdpt/action/zphgl/zphglAction" type="org.springframework.web.struts.DelegatingActionProxy" parameter="method" scope="request" >
+		<forward name="zphgl_zphfb" path="/jxjdpt/zphgl/zphgl_zphfb.jsp"></forward>
+		<forward name="zphgl_zphxq" path="/jxjdpt/zphgl/zphgl_zphxq.jsp"></forward>
+		<forward name="zphgl_zphdc" path="/jxjdpt/zphgl/zphgl_zphdc.jsp"></forward>
+		<forward name="zphgl_ryxxdc" path="/jxjdpt/zphgl/zphgl_ryxxdc.jsp"></forward>
+		<forward name="zphgl_dwlr" path="/jxjdpt/zphgl/zphgl_dwlr.jsp"></forward>
+		<forward name="zphgl_gwxxdc" path="/jxjdpt/zphgl/zphgl_gwxxdc.jsp"></forward>
+		<forward name="zphgl_ryxq" path="/jxjdpt/zphgl/zphgl_ryxq.jsp"></forward>
+		<forward name="zphgl_jxryxxdc" path="/jxjdpt/zphgl/zphgl_jxryxxdc.jsp"></forward>
+  		</action>
+  		<!-- 招聘会管理 -->
+		<action name="jxjdpt_zphglFB" path="/jxjdpt/action/zhcx/zhcxAction" type="org.springframework.web.struts.DelegatingActionProxy" parameter="method" scope="request" >
+		
+  		</action>
+  		<!--参数维护  -->
+		<action name="qxxxwhFB" path="/jxjdpt/cswh/CswhAction" type="org.springframework.web.struts.DelegatingActionProxy" parameter="method" scope="request" >
+ 			<forward name="cswh_lr" path="/jxjdpt/cswh/cswh.jsp" />
+ 			<forward name="qxToExl" path="/jxjdpt/cswh/qxToExl.jsp" />
+ 		</action>
+ 		
+ 		<!--见习补贴审核  -->
+		<action name="jxbtsqFB" path="/jxjdpt/jxbtsh/JxbtshAction" type="org.springframework.web.struts.DelegatingActionProxy" parameter="method" scope="request" >
+ 			<forward name="jxbtxqxc" path="/jxjdpt/jxbtsh/jxbtsh.jsp" />
+ 			<forward name="jxbtba" path="/jxjdpt/jxbtsh/jxbtba.jsp" />
+ 			<forward name="jxbtshlb" path="/jxjdpt/jxbtsh/jxbtshlb.jsp" />
+ 			<forward name="jxbtbalb" path="/jxjdpt/jxbtsh/jxbthzbalb.jsp" />
+ 			<forward name="jxbtdhzCx" path="/jxjdpt/jxbtsh/jxbtdhzlb.jsp" />
+ 			<forward name="jxbthzsc" path="/jxjdpt/jxbtsh/jxbthzsc.jsp" />
+ 			<forward name="jxbthzsclb" path="/jxjdpt/jxbtsh/jxbthzsclb.jsp" />
+ 			<forward name="jxbtbfhxx" path="/jxjdpt/jxbtsh/jxbtbfhwh.jsp" />
+ 			<forward name="jxbtbfhxxSave" path="/jxjdpt/jxbtsh/JxbtshAction.do?method=jxbtbfhxxCx" />
+ 		</action>
+ 		<!--见习补贴查询  -->
+		<action name="jxbtcxFB" path="/jxjdpt/jxbtsh/JxbtcxAction" type="org.springframework.web.struts.DelegatingActionProxy" parameter="method" scope="request" >
+ 			<forward name="jxbtrycx" path="/jxjdpt/jxbtsh/jxbtcx.jsp" />
+ 			<forward name="jxbtrydc" path="/jxjdpt/jxbtsh/jxbtmddc.jsp" />
+ 			<forward name="jxbtpcxqCx" path="/jxjdpt/jxbtsh/jxbtpcxq.jsp" />
+ 		</action>
+ 		
+ 		<!--见习补贴查询  -->
+		<action name="jxzzbysFB" path="/jxjdpt/jxjdzzbys/JxjdZzbysAction" type="org.springframework.web.struts.DelegatingActionProxy" parameter="method" scope="request" >
+ 			<forward name="jxyjwh" path="/jxjdpt/zzbys/jxjdzzbysjxyjwh.jsp" />
+ 			<forward name="jxjdzzbysByxhCx" path="/jxjdpt/jxjdzzbys/JxjdZzbysAction.do?method=jxjdzzbysByxhCx" />
+ 			<forward name="jxjdzzbysCx" path="/jxjdpt/zzbys/jxjdzzbysCx.jsp" />
+ 		</action>
+	</action-mappings>
+<controller nocache="true" contentType="text/html; charset=GBK" />
+</struts-config>
